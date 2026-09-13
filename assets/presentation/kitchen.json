@@ -1,0 +1,431 @@
+{
+  "schema": 1,
+  "id": "kitchen",
+  "version": "vs-1",
+  "models": {
+    "item.plate": {},
+    "item.toaster": {
+      "file": "models/toaster.gltf",
+      "bounds": [
+        0.52,
+        0.642,
+        0.495
+      ]
+    },
+    "item.pan": {},
+    "item.wood-cube": {},
+    "item.pillow": {},
+    "item.mixer": {
+      "file": "models/mixer.gltf",
+      "bounds": [
+        0.46,
+        0.282,
+        0.62
+      ]
+    },
+    "item.driver": {},
+    "item.lid": {},
+    "item.mug": {},
+    "item.board": {},
+    "item.tape": {},
+    "item.yoyo": {},
+    "item.chainsaw": {},
+    "item.kettle": {},
+    "item.hamster": {
+      "file": "models/hamster.gltf",
+      "bounds": [
+        0.35,
+        0.712,
+        0.664
+      ]
+    },
+    "item.spool": {},
+    "item.colander": {
+      "file": "models/colander.gltf",
+      "bounds": [
+        0.12,
+        0.68,
+        0.94
+      ]
+    },
+    "chassis.plastic-basket": {},
+    "chassis.wood-crate": {},
+    "chassis.metal-toolbox": {},
+    "driver.mira": {},
+    "driver.bork": {},
+    "driver.lio": {}
+  },
+  "materials": {
+    "road": {
+      "color": "#e8eee6",
+      "roughness": 0.65,
+      "texture": "textures/wood.png",
+      "repeat": [
+        20,
+        20
+      ]
+    },
+    "ramp": {
+      "color": "#deb967",
+      "roughness": 0.8
+    },
+    "wet": {
+      "color": "#73bddd",
+      "roughness": 0.15
+    },
+    "rock": {
+      "color": "#aa9a65",
+      "roughness": 1
+    },
+    "building": {
+      "color": "#579b99",
+      "roughness": 0.6
+    }
+  },
+  "audio": {
+    "drive.mixer": {
+      "files": [
+        "audio/mixer.wav"
+      ],
+      "gain": 0.28,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "drive.chainsaw": {
+      "files": [
+        "audio/chainsaw.wav"
+      ],
+      "gain": 0.28,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "drive.kettle": {
+      "files": [
+        "audio/kettle.wav"
+      ],
+      "gain": 0.28,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "drive.hamster": {
+      "files": [
+        "audio/hamster.wav"
+      ],
+      "gain": 0.28,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.ceramic": {
+      "files": [
+        "audio/ceramic.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.metal": {
+      "files": [
+        "audio/metal.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.wood": {
+      "files": [
+        "audio/wood.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.plastic": {
+      "files": [
+        "audio/plastic.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.fabric": {
+      "files": [
+        "audio/fabric.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.electric": {
+      "files": [
+        "audio/electric.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "impact.driver": {
+      "files": [
+        "audio/driver.wav"
+      ],
+      "gain": 0.55,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "damage.crack": {
+      "files": [
+        "audio/crack.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "part.detach": {
+      "files": [
+        "audio/detach.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "bonus.boost": {
+      "files": [
+        "audio/boost.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "bonus.end": {
+      "files": [
+        "audio/end.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "bonus.pickup": {
+      "files": [
+        "audio/pickup.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "rescue": {
+      "files": [
+        "audio/rescue.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "voice.mira": {
+      "files": [
+        "audio/voice-mira.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "voice.bork": {
+      "files": [
+        "audio/voice-bork.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "voice.lio": {
+      "files": [
+        "audio/voice-lio.wav"
+      ],
+      "gain": 0.35,
+      "loop": false,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "music.race": {
+      "files": [
+        "audio/kitchen.wav"
+      ],
+      "gain": 0.45,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "music.garage": {
+      "files": [
+        "audio/garage.wav"
+      ],
+      "gain": 0.45,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    },
+    "music.results": {
+      "files": [
+        "audio/results.wav"
+      ],
+      "gain": 0.45,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.6
+      ],
+      "cooldown": 0.18
+    }
+  },
+  "icons": {
+    "inspect": "icons/inspect.svg",
+    "reset": "icons/reset.svg",
+    "lasso": "icons/lasso.svg",
+    "boost": "icons/boost.svg",
+    "wheels": "icons/wheels.svg",
+    "drive": "icons/drive.svg",
+    "seat": "icons/seat.svg",
+    "attachment": "icons/attachment.svg",
+    "shield": "icons/shield.svg",
+    "cooling": "icons/cooling.svg",
+    "energy": "icons/energy.svg",
+    "grip": "icons/grip.svg",
+    "foam": "icons/foam.svg"
+  },
+  "quality": {
+    "standard": {
+      "pixelRatio": 1.5,
+      "shadows": true,
+      "effects": 12,
+      "voices": 16
+    },
+    "light": {
+      "pixelRatio": 1,
+      "shadows": false,
+      "effects": 4,
+      "voices": 8
+    }
+  },
+  "audioProfiles": {
+    "material.ceramic": {
+      "impact": "impact.ceramic"
+    },
+    "material.metal": {
+      "impact": "impact.metal"
+    },
+    "material.wood": {
+      "impact": "impact.wood"
+    },
+    "material.plastic": {
+      "impact": "impact.plastic"
+    },
+    "material.fabric": {
+      "impact": "impact.fabric"
+    },
+    "material.electric": {
+      "impact": "impact.electric"
+    },
+    "material.driver": {
+      "impact": "impact.driver"
+    },
+    "drive.mixer": {
+      "drive": "drive.mixer",
+      "impact": "impact.electric"
+    },
+    "drive.chainsaw": {
+      "drive": "drive.chainsaw",
+      "impact": "impact.metal"
+    },
+    "drive.kettle": {
+      "drive": "drive.kettle",
+      "impact": "impact.metal"
+    },
+    "drive.hamster": {
+      "drive": "drive.hamster",
+      "impact": "impact.metal"
+    }
+  }
+}
