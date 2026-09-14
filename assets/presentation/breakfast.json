@@ -1,13 +1,49 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "breakfast-visual-contract-02",
+  "version": "breakfast-pbr-01",
   "models": {
     "item.plate": {
-      "file": "technical/plate.glb",
-      "bounds": [0.081, 0.68, 0.68],
-      "requiredNodes": ["plate-shell", "hub", "socket_axle"],
-      "materials": {"ceramic": "vehicle.ceramic"}
+      "file": "pbr/plate.glb",
+      "bounds": [
+        0.08298875391483307,
+        0.6800000071525574,
+        0.6800000071525574
+      ],
+      "requiredNodes": [
+        "plate-shell",
+        "hub",
+        "socket_axle",
+        "plate-crack"
+      ],
+      "materials": {
+        "plastic": "vehicle.plastic",
+        "steel": "vehicle.metal",
+        "brass": "vehicle.brass",
+        "red": "vehicle.red",
+        "ivory": "vehicle.ivory",
+        "dark": "vehicle.dark",
+        "fur": "vehicle.fur",
+        "skin": "vehicle.skin",
+        "leather": "vehicle.leather",
+        "linen": "vehicle.cloth",
+        "white": "vehicle.white",
+        "mouth": "vehicle.mouth",
+        "thimble": "vehicle.thimble",
+        "ceramic": "vehicle.ceramic"
+      },
+      "lightFile": "pbr/plate-light.glb",
+      "states": {
+        "damaged": [
+          "plate-crack"
+        ],
+        "critical": [
+          "plate-crack"
+        ],
+        "destroyed": [
+          "plate-crack"
+        ]
+      }
     },
     "item.toaster": {
       "file": "models/toaster.gltf",
@@ -23,12 +59,62 @@
       "recipe": "ribbon.cushion"
     },
     "seat.pillow": {
-      "recipe": "ribbon.seat",
-      "offset": [0, -0.55, 0],
-      "materials": {"cloth": "vehicle.cloth"}
+      "offset": [
+        0,
+        -0.55,
+        0
+      ],
+      "materials": {
+        "plastic": "vehicle.plastic",
+        "steel": "vehicle.metal",
+        "brass": "vehicle.brass",
+        "red": "vehicle.red",
+        "ivory": "vehicle.ivory",
+        "dark": "vehicle.dark",
+        "fur": "vehicle.fur",
+        "skin": "vehicle.skin",
+        "leather": "vehicle.leather",
+        "linen": "vehicle.cloth",
+        "white": "vehicle.white",
+        "mouth": "vehicle.mouth",
+        "thimble": "vehicle.thimble",
+        "ceramic": "vehicle.ceramic"
+      },
+      "file": "pbr/seat.glb",
+      "lightFile": "pbr/seat-light.glb",
+      "bounds": [
+        0.6600000262260437,
+        0.2241256982088089,
+        0.47999998927116394
+      ],
+      "requiredNodes": [
+        "socket_pelvis"
+      ]
     },
     "item.mixer": {
-      "recipe": "ribbon.mixer"
+      "file": "pbr/mixer.glb",
+      "lightFile": "pbr/mixer-light.glb",
+      "bounds": [
+        0.4339999854564667,
+        0.28599999845027924,
+        0.6000000238418579
+      ],
+      "materials": {
+        "plastic": "vehicle.plastic",
+        "steel": "vehicle.metal",
+        "brass": "vehicle.brass",
+        "red": "vehicle.red",
+        "ivory": "vehicle.ivory",
+        "dark": "vehicle.dark",
+        "fur": "vehicle.fur",
+        "skin": "vehicle.skin",
+        "leather": "vehicle.leather",
+        "linen": "vehicle.cloth",
+        "white": "vehicle.white",
+        "mouth": "vehicle.mouth",
+        "thimble": "vehicle.thimble",
+        "ceramic": "vehicle.ceramic"
+      }
     },
     "item.driver": {},
     "item.lid": {},
@@ -56,15 +142,78 @@
       ]
     },
     "chassis.plastic-basket": {
-      "recipe": "ribbon.basket",
-      "materials": {"plastic": "vehicle.plastic", "steel": "vehicle.metal"}
+      "materials": {
+        "plastic": "vehicle.plastic",
+        "steel": "vehicle.metal",
+        "brass": "vehicle.brass",
+        "red": "vehicle.red",
+        "ivory": "vehicle.ivory",
+        "dark": "vehicle.dark",
+        "fur": "vehicle.fur",
+        "skin": "vehicle.skin",
+        "leather": "vehicle.leather",
+        "linen": "vehicle.cloth",
+        "white": "vehicle.white",
+        "mouth": "vehicle.mouth",
+        "thimble": "vehicle.thimble",
+        "ceramic": "vehicle.ceramic"
+      },
+      "file": "pbr/basket.glb",
+      "lightFile": "pbr/basket-light.glb",
+      "bounds": [
+        1.4855799674987793,
+        0.47749999165534973,
+        1.718000054359436
+      ]
     },
     "chassis.wood-crate": {},
     "chassis.metal-toolbox": {},
     "driver.mira": {
-      "recipe": "ribbon.mira",
-      "offset": [0, -0.96, 0],
-      "freeOffset": [0, 0, 0]
+      "offset": [
+        0,
+        -0.96,
+        0
+      ],
+      "freeOffset": [
+        0,
+        0,
+        0
+      ],
+      "file": "pbr/mira.glb",
+      "lightFile": "pbr/mira-light.glb",
+      "bounds": [
+        0.5120000243186951,
+        0.6548454761505127,
+        0.3719598799943924
+      ],
+      "materials": {
+        "plastic": "vehicle.plastic",
+        "steel": "vehicle.metal",
+        "brass": "vehicle.brass",
+        "red": "vehicle.red",
+        "ivory": "vehicle.ivory",
+        "dark": "vehicle.dark",
+        "fur": "vehicle.fur",
+        "skin": "vehicle.skin",
+        "leather": "vehicle.leather",
+        "linen": "vehicle.cloth",
+        "white": "vehicle.white",
+        "mouth": "vehicle.mouth",
+        "thimble": "vehicle.thimble",
+        "ceramic": "vehicle.ceramic"
+      },
+      "requiredNodes": [
+        "pelvis",
+        "hand_left",
+        "hand_right",
+        "foot_left",
+        "foot_right"
+      ],
+      "animations": {
+        "idle": "seated_idle",
+        "driving": "seated_drive",
+        "ejected": "airborne"
+      }
     },
     "driver.bork": {},
     "driver.lio": {},
@@ -80,21 +229,169 @@
   },
   "materials": {
     "vehicle.ceramic": {
-      "color": "#ffffff", "roughness": 0.8, "metalness": 0.1,
-      "baseColorMap": {"file": "technical/ceramic-color-256.png", "lightFile": "technical/ceramic-color-64.png", "flipY": false},
-      "normalMap": {"file": "technical/ceramic-normal-256.png", "lightFile": "technical/ceramic-normal-64.png", "flipY": false},
-      "roughnessMap": {"file": "technical/ceramic-orm-256.png", "flipY": false},
-      "metalnessMap": {"file": "technical/ceramic-orm-256.png", "flipY": false},
-      "aoMap": {"file": "technical/ceramic-orm-256.png", "flipY": false},
-      "normalScale": [0.25, 0.25], "aoIntensity": 0.7
+      "color": "#ffffff",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.06,
+        0.06
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/ceramic-color.webp",
+        "lightFile": "pbr/ceramic-color-light.webp",
+        "flipY": false
+      },
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      }
     },
-    "vehicle.cloth": {"color": "#ffffff", "roughness": 0.95, "baseColorMap": {"file": "technical/cloth-color-256.png", "lightFile": "technical/cloth-color-64.png"}, "normalMap": {"file": "technical/cloth-normal-256.png", "lightFile": "technical/cloth-normal-64.png"}, "normalScale": [0.4, 0.4]},
-    "vehicle.plastic": {"color": "#14988d", "roughness": 0.35, "metalness": 0.02},
-    "vehicle.metal": {"color": "#a9bac0", "roughness": 0.27, "metalness": 0.8},
+    "vehicle.cloth": {
+      "color": "#ffffff",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/linen-color.webp",
+        "lightFile": "pbr/linen-color-light.webp",
+        "flipY": false
+      },
+      "normalMap": {
+        "file": "pbr/linen-normal.png",
+        "lightFile": "pbr/linen-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.plastic": {
+      "color": "#148d80",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/plastic-normal.png",
+        "lightFile": "pbr/plastic-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/plastic-orm.png",
+        "lightFile": "pbr/plastic-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/plastic-orm.png",
+        "lightFile": "pbr/plastic-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/plastic-orm.png",
+        "lightFile": "pbr/plastic-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.metal": {
+      "color": "#d3dedb",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/steel-normal.png",
+        "lightFile": "pbr/steel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": false
+      }
+    },
     "road": {
       "color": "#ffffff",
-      "roughness": 0.64,
-      "texture": "textures/art-oak.png"
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/oak-color.webp",
+        "lightFile": "pbr/oak-color-light.webp",
+        "flipY": true
+      },
+      "normalMap": {
+        "file": "pbr/oak-normal.png",
+        "lightFile": "pbr/oak-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      }
     },
     "ramp": {
       "color": "#deb967",
@@ -115,12 +412,39 @@
       "texture": "breakfast/guard.svg"
     },
     "art.wood": {
-      "color": "#cba36c",
-      "roughness": 0.48,
-      "texture": "textures/art-oak.png",
-      "normalMap": {"file": "technical/wood-normal-256.png", "lightFile": "technical/wood-normal-64.png"},
-      "roughnessMap": {"file": "technical/wood-orm-256.png", "lightFile": "technical/wood-orm-64.png"},
-      "normalScale": [0.4, 0.4]
+      "color": "#ffffff",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/oak-color.webp",
+        "lightFile": "pbr/oak-color-light.webp",
+        "flipY": true
+      },
+      "normalMap": {
+        "file": "pbr/oak-normal.png",
+        "lightFile": "pbr/oak-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      }
     },
     "art.cream": {
       "color": "#f5e5c8",
@@ -128,9 +452,34 @@
       "metalness": 0
     },
     "art.teal": {
-      "color": "#2b948b",
-      "roughness": 0.32,
-      "metalness": 0.05
+      "color": "#52b9a8",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true
+      }
     },
     "art.recess": {
       "color": "#23746c",
@@ -143,14 +492,64 @@
       "metalness": 0.06
     },
     "art.ceramic": {
-      "color": "#dce8d7",
-      "roughness": 0.22,
-      "metalness": 0.03
+      "color": "#fff5de",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true
+      }
     },
     "art.brass": {
-      "color": "#d9a441",
-      "roughness": 0.3,
-      "metalness": 0.7
+      "color": "#d7b467",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/steel-normal.png",
+        "lightFile": "pbr/steel-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": true
+      }
     },
     "art.dark": {
       "color": "#383b36",
@@ -164,20 +563,113 @@
     },
     "art.cloth": {
       "color": "#ffffff",
-      "roughness": 0.95,
-      "metalness": 0,
-      "texture": "arcade-art/gingham.svg",
-      "normalMap": {"file": "technical/cloth-normal-256.png", "lightFile": "technical/cloth-normal-64.png", "repeat": [12, 6]},
-      "roughnessMap": {"file": "technical/cloth-orm-256.png", "lightFile": "technical/cloth-orm-64.png", "repeat": [12, 6]},
-      "normalScale": [0.35, 0.35],
-      "repeat": [
-        12,
-        6
-      ]
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/gingham-color.webp",
+        "lightFile": "pbr/gingham-color-light.webp",
+        "flipY": true,
+        "repeat": [
+          12,
+          6
+        ]
+      },
+      "normalMap": {
+        "file": "pbr/linen-normal.png",
+        "lightFile": "pbr/linen-normal-light.png",
+        "flipY": true,
+        "repeat": [
+          12,
+          6
+        ]
+      },
+      "roughnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          12,
+          6
+        ]
+      },
+      "metalnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          12,
+          6
+        ]
+      },
+      "aoMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          12,
+          6
+        ]
+      }
     },
     "art.wall": {
-      "color": "#f2dfb5",
-      "roughness": 0.94
+      "color": "#ffffff",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.06,
+        0.06
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/plaster-color.webp",
+        "lightFile": "pbr/plaster-color-light.webp",
+        "flipY": true,
+        "repeat": [
+          10,
+          6
+        ]
+      },
+      "normalMap": {
+        "file": "pbr/linen-normal.png",
+        "lightFile": "pbr/linen-normal-light.png",
+        "flipY": true,
+        "repeat": [
+          10,
+          6
+        ]
+      },
+      "roughnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          10,
+          6
+        ]
+      },
+      "metalnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          10,
+          6
+        ]
+      },
+      "aoMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          10,
+          6
+        ]
+      }
     },
     "art.window": {
       "color": "#ffffff",
@@ -198,13 +690,39 @@
       "texture": "arcade-art/oak.svg"
     },
     "art.sidefloor": {
-      "color": "#b4aa95",
-      "roughness": 0.84,
-      "texture": "textures/art-oak.png",
-      "repeat": [
-        1,
-        1
-      ]
+      "color": "#bba17b",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/oak-color.webp",
+        "lightFile": "pbr/oak-color-light.webp",
+        "flipY": true
+      },
+      "normalMap": {
+        "file": "pbr/oak-normal.png",
+        "lightFile": "pbr/oak-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      }
     },
     "art.tin": {
       "color": "#ffffff",
@@ -214,24 +732,462 @@
     },
     "art.seatcloth": {
       "color": "#ffffff",
-      "roughness": 0.95,
-      "texture": "arcade-art/gingham.svg",
-      "repeat": [
-        2,
-        2
-      ]
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/linen-color.webp",
+        "lightFile": "pbr/linen-color-light.webp",
+        "flipY": true,
+        "repeat": [
+          2,
+          2
+        ]
+      },
+      "normalMap": {
+        "file": "pbr/linen-normal.png",
+        "lightFile": "pbr/linen-normal-light.png",
+        "flipY": true,
+        "repeat": [
+          2,
+          2
+        ]
+      },
+      "roughnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          2,
+          2
+        ]
+      },
+      "metalnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          2,
+          2
+        ]
+      },
+      "aoMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          2,
+          2
+        ]
+      }
     },
     "art.wicker": {
-      "color": "#bd8845",
-      "roughness": 0.88
+      "color": "#d1a66f",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/oak-color.webp",
+        "lightFile": "pbr/oak-color-light.webp",
+        "flipY": true
+      },
+      "normalMap": {
+        "file": "pbr/oak-normal.png",
+        "lightFile": "pbr/oak-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      }
     },
     "art.coldlamp": {
       "color": "#e4ffff",
       "roughness": 0.12
     },
     "art.lowerwall": {
-      "color": "#91bfb0",
-      "roughness": 0.83
+      "color": "#9fcbbb",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/plaster-color.webp",
+        "lightFile": "pbr/plaster-color-light.webp",
+        "flipY": true,
+        "repeat": [
+          8,
+          2
+        ]
+      },
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": true,
+        "repeat": [
+          8,
+          2
+        ]
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          8,
+          2
+        ]
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          8,
+          2
+        ]
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": true,
+        "repeat": [
+          8,
+          2
+        ]
+      }
+    },
+    "vehicle.brass": {
+      "color": "#dab56a",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/steel-normal.png",
+        "lightFile": "pbr/steel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.red": {
+      "color": "#bc2923",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.ivory": {
+      "color": "#fff0d2",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.dark": {
+      "color": "#253430",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/plastic-normal.png",
+        "lightFile": "pbr/plastic-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/plastic-orm.png",
+        "lightFile": "pbr/plastic-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/plastic-orm.png",
+        "lightFile": "pbr/plastic-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/plastic-orm.png",
+        "lightFile": "pbr/plastic-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.fur": {
+      "color": "#ffffff",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/fur-color.webp",
+        "lightFile": "pbr/fur-color-light.webp",
+        "flipY": false
+      },
+      "normalMap": {
+        "file": "pbr/fur-normal.png",
+        "lightFile": "pbr/fur-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/fur-orm.png",
+        "lightFile": "pbr/fur-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/fur-orm.png",
+        "lightFile": "pbr/fur-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/fur-orm.png",
+        "lightFile": "pbr/fur-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.skin": {
+      "color": "#e4a292",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/fur-normal.png",
+        "lightFile": "pbr/fur-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/fur-orm.png",
+        "lightFile": "pbr/fur-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/fur-orm.png",
+        "lightFile": "pbr/fur-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/fur-orm.png",
+        "lightFile": "pbr/fur-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.leather": {
+      "color": "#ffffff",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/leather-color.webp",
+        "lightFile": "pbr/leather-color-light.webp",
+        "flipY": false
+      },
+      "normalMap": {
+        "file": "pbr/linen-normal.png",
+        "lightFile": "pbr/linen-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/linen-orm.png",
+        "lightFile": "pbr/linen-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.white": {
+      "color": "#fff9e8",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.mouth": {
+      "color": "#673435",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/enamel-normal.png",
+        "lightFile": "pbr/enamel-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/enamel-orm.png",
+        "lightFile": "pbr/enamel-orm-light.png",
+        "flipY": false
+      }
+    },
+    "vehicle.thimble": {
+      "color": "#c7d4d0",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.65,
+        0.65
+      ],
+      "aoIntensity": 0.5,
+      "normalMap": {
+        "file": "pbr/thimble-normal.png",
+        "lightFile": "pbr/thimble-normal-light.png",
+        "flipY": false
+      },
+      "roughnessMap": {
+        "file": "pbr/thimble-orm.png",
+        "lightFile": "pbr/thimble-orm-light.png",
+        "flipY": false
+      },
+      "metalnessMap": {
+        "file": "pbr/thimble-orm.png",
+        "lightFile": "pbr/thimble-orm-light.png",
+        "flipY": false
+      },
+      "aoMap": {
+        "file": "pbr/thimble-orm.png",
+        "lightFile": "pbr/thimble-orm-light.png",
+        "flipY": false
+      }
     }
   },
   "audio": {
