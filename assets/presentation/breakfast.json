@@ -1,10 +1,13 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "breakfast-01",
+  "version": "breakfast-visual-contract-02",
   "models": {
     "item.plate": {
-      "recipe": "ribbon.plate"
+      "file": "technical/plate.glb",
+      "bounds": [0.081, 0.68, 0.68],
+      "requiredNodes": ["plate-shell", "hub", "socket_axle"],
+      "materials": {"ceramic": "vehicle.ceramic"}
     },
     "item.toaster": {
       "file": "models/toaster.gltf",
@@ -18,6 +21,11 @@
     "item.wood-cube": {},
     "item.pillow": {
       "recipe": "ribbon.cushion"
+    },
+    "seat.pillow": {
+      "recipe": "ribbon.seat",
+      "offset": [0, -0.55, 0],
+      "materials": {"cloth": "vehicle.cloth"}
     },
     "item.mixer": {
       "recipe": "ribbon.mixer"
@@ -48,12 +56,15 @@
       ]
     },
     "chassis.plastic-basket": {
-      "recipe": "ribbon.basket"
+      "recipe": "ribbon.basket",
+      "materials": {"plastic": "vehicle.plastic", "steel": "vehicle.metal"}
     },
     "chassis.wood-crate": {},
     "chassis.metal-toolbox": {},
     "driver.mira": {
-      "recipe": "ribbon.mira"
+      "recipe": "ribbon.mira",
+      "offset": [0, -0.96, 0],
+      "freeOffset": [0, 0, 0]
     },
     "driver.bork": {},
     "driver.lio": {},
@@ -68,6 +79,18 @@
     }
   },
   "materials": {
+    "vehicle.ceramic": {
+      "color": "#ffffff", "roughness": 0.8, "metalness": 0.1,
+      "baseColorMap": {"file": "technical/ceramic-color-256.png", "lightFile": "technical/ceramic-color-64.png", "flipY": false},
+      "normalMap": {"file": "technical/ceramic-normal-256.png", "lightFile": "technical/ceramic-normal-64.png", "flipY": false},
+      "roughnessMap": {"file": "technical/ceramic-orm-256.png", "flipY": false},
+      "metalnessMap": {"file": "technical/ceramic-orm-256.png", "flipY": false},
+      "aoMap": {"file": "technical/ceramic-orm-256.png", "flipY": false},
+      "normalScale": [0.25, 0.25], "aoIntensity": 0.7
+    },
+    "vehicle.cloth": {"color": "#ffffff", "roughness": 0.95, "baseColorMap": {"file": "technical/cloth-color-256.png", "lightFile": "technical/cloth-color-64.png"}, "normalMap": {"file": "technical/cloth-normal-256.png", "lightFile": "technical/cloth-normal-64.png"}, "normalScale": [0.4, 0.4]},
+    "vehicle.plastic": {"color": "#14988d", "roughness": 0.35, "metalness": 0.02},
+    "vehicle.metal": {"color": "#a9bac0", "roughness": 0.27, "metalness": 0.8},
     "road": {
       "color": "#ffffff",
       "roughness": 0.64,
@@ -94,7 +117,10 @@
     "art.wood": {
       "color": "#cba36c",
       "roughness": 0.48,
-      "texture": "textures/art-oak.png"
+      "texture": "textures/art-oak.png",
+      "normalMap": {"file": "technical/wood-normal-256.png", "lightFile": "technical/wood-normal-64.png"},
+      "roughnessMap": {"file": "technical/wood-orm-256.png", "lightFile": "technical/wood-orm-64.png"},
+      "normalScale": [0.4, 0.4]
     },
     "art.cream": {
       "color": "#f5e5c8",
@@ -141,6 +167,9 @@
       "roughness": 0.95,
       "metalness": 0,
       "texture": "arcade-art/gingham.svg",
+      "normalMap": {"file": "technical/cloth-normal-256.png", "lightFile": "technical/cloth-normal-64.png", "repeat": [12, 6]},
+      "roughnessMap": {"file": "technical/cloth-orm-256.png", "lightFile": "technical/cloth-orm-64.png", "repeat": [12, 6]},
+      "normalScale": [0.35, 0.35],
       "repeat": [
         12,
         6
@@ -501,6 +530,9 @@
   "quality": {
     "standard": {
       "pixelRatio": 2,
+      "renderScale": 1,
+      "anisotropy": 8,
+      "contactShadows": true,
       "shadows": true,
       "effects": 12,
       "voices": 16,
@@ -510,6 +542,9 @@
     },
     "light": {
       "pixelRatio": 1.5,
+      "renderScale": 0.85,
+      "anisotropy": 2,
+      "contactShadows": true,
       "shadows": false,
       "effects": 4,
       "voices": 8,
