@@ -1191,6 +1191,7 @@
     }
   },
   "audio": {
+    "ambience.wind": {"files":["audio/wind.wav"],"gain":0.22,"loop":true,"pitch":[0.7,1.4]},
     "drive.mixer": {
       "files": [
         "audio/mixer.wav"
