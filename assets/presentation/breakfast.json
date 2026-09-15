@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "kitchen-accident-art-01",
+  "version": "kitchen-accident-art-02",
   "models": {
     "item.plate": {
       "file": "pbr/plate.glb",
@@ -265,8 +265,8 @@
       }
     },
     "environment.chair-back": {
-      "file": "accident/chair-back.glb",
-      "lightFile": "accident/chair-back-light.glb",
+      "file": "accident/chair-back-stable.glb",
+      "lightFile": "accident/chair-back-stable-light.glb",
       "bounds": [
         10,
         0.22100000828504562,
@@ -284,8 +284,8 @@
       }
     },
     "environment.chair-seat": {
-      "file": "accident/chair-seat.glb",
-      "lightFile": "accident/chair-seat-light.glb",
+      "file": "accident/chair-seat-stable.glb",
+      "lightFile": "accident/chair-seat-stable-light.glb",
       "bounds": [
         11.83925724029541,
         5.130597427487373,
@@ -303,8 +303,8 @@
       }
     },
     "environment.chair-down": {
-      "file": "accident/chair-down.glb",
-      "lightFile": "accident/chair-down-light.glb",
+      "file": "accident/chair-down-stable.glb",
+      "lightFile": "accident/chair-down-stable-light.glb",
       "bounds": [
         10,
         0.22100000828504562,
@@ -322,8 +322,8 @@
       }
     },
     "environment.lower-board": {
-      "file": "accident/lower-board.glb",
-      "lightFile": "accident/lower-board-light.glb",
+      "file": "accident/lower-board-stable.glb",
+      "lightFile": "accident/lower-board-stable-light.glb",
       "bounds": [
         10,
         0.22100000828504562,
@@ -550,11 +550,11 @@
       }
     },
     "environment.drawer-one": {
-      "file": "accident/drawer-one.glb",
-      "lightFile": "accident/drawer-one-light.glb",
+      "file": "accident/drawer-one-stable.glb",
+      "lightFile": "accident/drawer-one-stable-light.glb",
       "bounds": [
         47,
-        0.30250000953674316,
+        0.30000001192092896,
         24
       ],
       "materials": {
@@ -569,11 +569,11 @@
       }
     },
     "environment.cabinet-low-shelf": {
-      "file": "accident/cabinet-low-shelf.glb",
-      "lightFile": "accident/cabinet-low-shelf-light.glb",
+      "file": "accident/cabinet-low-shelf-stable.glb",
+      "lightFile": "accident/cabinet-low-shelf-stable-light.glb",
       "bounds": [
         44,
-        0.30250000953674316,
+        0.30000001192092896,
         23
       ],
       "materials": {
@@ -613,7 +613,7 @@
       "roughness": 0.8
     },
     "boundary.arrows": {
-      "color": "#578c85",
+      "color": "#f0b13a",
       "roughness": 0.8
     },
     "hazard.coffee": {
