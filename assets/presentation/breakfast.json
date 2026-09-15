@@ -228,6 +228,8 @@
     }
   },
   "materials": {
+    "boundary.panel": {"color":"#91a7a1","roughness":0.65,"metalness":0.15},
+    "boundary.arrows": {"color":"#ffffff","roughness":0.8,"metalness":0,"texture":"kitchen-hazards/direction.svg"},
     "hazard.coffee": {"color":"#472722","roughness":0.18,"metalness":0.05},
     "hazard.condensation": {"color":"#9ac4ce","roughness":0.12,"metalness":0.15},
     "hazard.grain": {"color":"#d8b55f","roughness":0.94,"metalness":0},
