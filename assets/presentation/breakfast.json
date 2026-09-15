@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "breakfast-pbr-01",
+  "version": "breakfast-hazards-01",
   "models": {
     "item.plate": {
       "file": "pbr/plate.glb",
@@ -228,6 +228,12 @@
     }
   },
   "materials": {
+    "hazard.coffee": {"color":"#472722","roughness":0.18,"metalness":0.05},
+    "hazard.condensation": {"color":"#9ac4ce","roughness":0.12,"metalness":0.15},
+    "hazard.grain": {"color":"#d8b55f","roughness":0.94,"metalness":0},
+    "hazard.roach": {"color":"#392c25","roughness":0.5,"metalness":0.08},
+    "hazard.window": {"color":"#def2ec","roughness":0.4,"metalness":0},
+    "hazard.finish": {"color":"#ffffff","roughness":0.85,"metalness":0,"texture":"kitchen-hazards/finish.svg"},
     "vehicle.ceramic": {
       "color": "#ffffff",
       "roughness": 1,
@@ -725,10 +731,13 @@
       }
     },
     "art.tin": {
-      "color": "#ffffff",
-      "roughness": 0.34,
-      "metalness": 0.45,
-      "texture": "arcade-art/tin.svg"
+      "color": "#ccd8d6",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [0.2,0.2],
+      "normalMap": {"file":"pbr/steel-normal.png","lightFile":"pbr/steel-normal-light.png","flipY":true},
+      "roughnessMap": {"file":"pbr/steel-orm.png","lightFile":"pbr/steel-orm-light.png","flipY":true},
+      "metalnessMap": {"file":"pbr/steel-orm.png","lightFile":"pbr/steel-orm-light.png","flipY":true}
     },
     "art.seatcloth": {
       "color": "#ffffff",
