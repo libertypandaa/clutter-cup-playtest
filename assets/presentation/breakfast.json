@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "breakfast-hazards-01",
+  "version": "kitchen-accident-art-01",
   "models": {
     "item.plate": {
       "file": "pbr/plate.glb",
@@ -225,17 +225,428 @@
     },
     "environment.arcade-jar-98": {
       "recipe": "arcade.jar"
+    },
+    "environment.fallen-cup": {
+      "file": "accident/fallen-cup.glb",
+      "lightFile": "accident/fallen-cup-light.glb",
+      "bounds": [
+        1.8280656933784485,
+        2.142572522163391,
+        1.6992570161819458
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.roach": {
+      "file": "accident/roach.glb",
+      "lightFile": "accident/roach-light.glb",
+      "bounds": [
+        2.05473792552948,
+        0.608341373205185,
+        1.3906485891342162
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.chair-back": {
+      "file": "accident/chair-back.glb",
+      "lightFile": "accident/chair-back-light.glb",
+      "bounds": [
+        10,
+        0.22100000828504562,
+        10.120418548583984
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.chair-seat": {
+      "file": "accident/chair-seat.glb",
+      "lightFile": "accident/chair-seat-light.glb",
+      "bounds": [
+        11.83925724029541,
+        5.130597427487373,
+        12.27108097076416
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.chair-down": {
+      "file": "accident/chair-down.glb",
+      "lightFile": "accident/chair-down-light.glb",
+      "bounds": [
+        10,
+        0.22100000828504562,
+        8.066146850585938
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.lower-board": {
+      "file": "accident/lower-board.glb",
+      "lightFile": "accident/lower-board-light.glb",
+      "bounds": [
+        10,
+        0.22100000828504562,
+        20.476076126098633
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.fallen-chair-feet--4": {
+      "file": "accident/fallen-chair-feet--4.glb",
+      "lightFile": "accident/fallen-chair-feet--4-light.glb",
+      "bounds": [
+        1.2000000476837158,
+        0.8199999928474426,
+        7
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.fallen-chair-feet-4": {
+      "file": "accident/fallen-chair-feet-4.glb",
+      "lightFile": "accident/fallen-chair-feet-4-light.glb",
+      "bounds": [
+        1.2000000476837158,
+        0.8199999928474426,
+        7
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.drawer-one-base": {
+      "file": "accident/drawer-one-base.glb",
+      "lightFile": "accident/drawer-one-base-light.glb",
+      "bounds": [
+        32,
+        4.900000095367432,
+        12.211892127990723
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.drawer-two-base": {
+      "file": "accident/drawer-two-base.glb",
+      "lightFile": "accident/drawer-two-base-light.glb",
+      "bounds": [
+        34,
+        8.899999618530273,
+        8.211892127990723
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-0": {
+      "file": "accident/cup-shard-0.glb",
+      "lightFile": "accident/cup-shard-0-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-1": {
+      "file": "accident/cup-shard-1.glb",
+      "lightFile": "accident/cup-shard-1-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-2": {
+      "file": "accident/cup-shard-2.glb",
+      "lightFile": "accident/cup-shard-2-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-3": {
+      "file": "accident/cup-shard-3.glb",
+      "lightFile": "accident/cup-shard-3-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-4": {
+      "file": "accident/cup-shard-4.glb",
+      "lightFile": "accident/cup-shard-4-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-5": {
+      "file": "accident/cup-shard-5.glb",
+      "lightFile": "accident/cup-shard-5-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cup-shard-6": {
+      "file": "accident/cup-shard-6.glb",
+      "lightFile": "accident/cup-shard-6-light.glb",
+      "bounds": [
+        0.4599999934434891,
+        0.18499999679625034,
+        0.45000000298023224
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.drawer-one": {
+      "file": "accident/drawer-one.glb",
+      "lightFile": "accident/drawer-one-light.glb",
+      "bounds": [
+        47,
+        0.30250000953674316,
+        24
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.cabinet-low-shelf": {
+      "file": "accident/cabinet-low-shelf.glb",
+      "lightFile": "accident/cabinet-low-shelf-light.glb",
+      "bounds": [
+        44,
+        0.30250000953674316,
+        23
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
+    },
+    "environment.accident-setting": {
+      "file": "accident/accident-setting.glb",
+      "lightFile": "accident/accident-setting-light.glb",
+      "bounds": [
+        130,
+        16.1499996304512,
+        113.9399995803833
+      ],
+      "materials": {
+        "wood": "accident.wood",
+        "teal": "art.teal",
+        "cloth": "art.seatcloth",
+        "ceramic": "art.ceramic",
+        "red": "art.red",
+        "brass": "vehicle.brass",
+        "coffee": "accident.shell",
+        "dark": "vehicle.dark"
+      }
     }
   },
   "materials": {
-    "boundary.panel": {"color":"#91a7a1","roughness":0.65,"metalness":0.15},
-    "boundary.arrows": {"color":"#ffffff","roughness":0.8,"metalness":0,"texture":"kitchen-hazards/direction.svg"},
-    "hazard.coffee": {"color":"#472722","roughness":0.18,"metalness":0.05},
-    "hazard.condensation": {"color":"#9ac4ce","roughness":0.12,"metalness":0.15},
-    "hazard.grain": {"color":"#d8b55f","roughness":0.94,"metalness":0},
-    "hazard.roach": {"color":"#392c25","roughness":0.5,"metalness":0.08},
-    "hazard.window": {"color":"#def2ec","roughness":0.4,"metalness":0},
-    "hazard.finish": {"color":"#ffffff","roughness":0.85,"metalness":0,"texture":"kitchen-hazards/finish.svg"},
+    "boundary.panel": {
+      "color": "#9bbabc",
+      "roughness": 0.8
+    },
+    "boundary.arrows": {
+      "color": "#578c85",
+      "roughness": 0.8
+    },
+    "hazard.coffee": {
+      "color": "#43251b",
+      "roughness": 0.19,
+      "metalness": 0
+    },
+    "hazard.condensation": {
+      "color": "#9ac4ce",
+      "roughness": 0.12,
+      "metalness": 0.15
+    },
+    "hazard.grain": {
+      "color": "#d8b55f",
+      "roughness": 0.94,
+      "metalness": 0
+    },
+    "hazard.roach": {
+      "color": "#392c25",
+      "roughness": 0.5,
+      "metalness": 0.08
+    },
+    "hazard.window": {
+      "color": "#def2ec",
+      "roughness": 0.4,
+      "metalness": 0
+    },
+    "hazard.finish": {
+      "color": "#ffffff",
+      "roughness": 0.85,
+      "metalness": 0,
+      "texture": "kitchen-hazards/finish.svg"
+    },
     "vehicle.ceramic": {
       "color": "#ffffff",
       "roughness": 1,
@@ -736,10 +1147,25 @@
       "color": "#ccd8d6",
       "roughness": 1,
       "metalness": 1,
-      "normalScale": [0.2,0.2],
-      "normalMap": {"file":"pbr/steel-normal.png","lightFile":"pbr/steel-normal-light.png","flipY":true},
-      "roughnessMap": {"file":"pbr/steel-orm.png","lightFile":"pbr/steel-orm-light.png","flipY":true},
-      "metalnessMap": {"file":"pbr/steel-orm.png","lightFile":"pbr/steel-orm-light.png","flipY":true}
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "normalMap": {
+        "file": "pbr/steel-normal.png",
+        "lightFile": "pbr/steel-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/steel-orm.png",
+        "lightFile": "pbr/steel-orm-light.png",
+        "flipY": true
+      }
     },
     "art.seatcloth": {
       "color": "#ffffff",
@@ -1199,10 +1625,72 @@
         "lightFile": "pbr/thimble-orm-light.png",
         "flipY": false
       }
+    },
+    "accident.wood": {
+      "color": "#cfaa76",
+      "roughness": 1,
+      "metalness": 1,
+      "normalScale": [
+        0.2,
+        0.2
+      ],
+      "aoIntensity": 0.5,
+      "baseColorMap": {
+        "file": "pbr/oak-color.webp",
+        "lightFile": "pbr/oak-color-light.webp",
+        "flipY": true
+      },
+      "normalMap": {
+        "file": "pbr/oak-normal.png",
+        "lightFile": "pbr/oak-normal-light.png",
+        "flipY": true
+      },
+      "roughnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "metalnessMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      },
+      "aoMap": {
+        "file": "pbr/oak-orm.png",
+        "lightFile": "pbr/oak-orm-light.png",
+        "flipY": true
+      }
+    },
+    "accident.shell": {
+      "color": "#613321",
+      "roughness": 0.32,
+      "metalness": 0
+    },
+    "accident.floor": {
+      "color": "#e4dfc9",
+      "roughness": 0.82,
+      "metalness": 0,
+      "baseColorMap": {
+        "file": "accident/floor.svg",
+        "repeat": [
+          45,
+          35
+        ]
+      }
     }
   },
   "audio": {
-    "ambience.wind": {"files":["audio/wind.wav"],"gain":0.22,"loop":true,"pitch":[0.7,1.4]},
+    "ambience.wind": {
+      "files": [
+        "audio/wind.wav"
+      ],
+      "gain": 0.22,
+      "loop": true,
+      "pitch": [
+        0.7,
+        1.4
+      ]
+    },
     "drive.mixer": {
       "files": [
         "audio/mixer.wav"
