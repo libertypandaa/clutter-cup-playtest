@@ -1,8 +1,15 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "kitchen-accident-art-02",
+  "version": "family-breakfast-scenario-04",
   "models": {
+    "environment.table-hem": {"bounds":[40,6,0.1]},
+    "environment.sink-tap": {"bounds":[0.28,5.2,5.78]},
+    "environment.working-toaster": {"bounds":[1.95,1.2,2.2]},
+    "environment.working-mixer": {"bounds":[2,2.2,2]},
+    "environment.torn-grain-bag": {"bounds":[2.5,1.3,3]},
+    "environment.berry": {"recipe":"berry-envelope","bounds":[0.84,0.84,0.84]},
+    "environment.toast": {"recipe":"toast-envelope","bounds":[1.3,1.7,0.24]},
     "item.plate": {
       "file": "pbr/plate.glb",
       "bounds": [
@@ -608,6 +615,11 @@
     }
   },
   "materials": {
+    "event.crumb": {"color":"#d9b771","roughness":0.95},
+    "event.dust": {"color":"#f2e4c8","roughness":1},
+    "event.track": {"color":"#9b947f","roughness":1},
+    "event.berry": {"color":"#805da9","roughness":0.45},
+    "event.toast": {"color":"#d9aa63","roughness":0.95},
     "boundary.panel": {
       "color": "#9bbabc",
       "roughness": 0.8
@@ -1680,6 +1692,10 @@
     }
   },
   "audio": {
+    "event.toast.warning": {"files":["audio/metal.wav"],"gain":0.22,"cooldown":0.2},
+    "environment.water-drop": {"files":["audio/kitchen-drop.mp3"],"gain":0.32,"cooldown":0.5},
+    "event.toast.active": {"files":["audio/detach.wav"],"gain":0.3,"cooldown":0.2},
+    "event.toast.settled": {"files":["audio/fabric.wav"],"gain":0.2,"cooldown":0.2},
     "ambience.wind": {
       "files": [
         "audio/wind.wav"

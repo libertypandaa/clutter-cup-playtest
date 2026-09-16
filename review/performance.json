@@ -1,0 +1,100 @@
+{
+  "environment": "Chromium / ANGLE D3D11 / Intel HD 620; app cap 30 Hz; viewport emulation, not phone",
+  "rows": [
+    {
+      "stage": "before",
+      "viewport": "desktop",
+      "quality": "standard",
+      "frameP50": 33.30000000000109,
+      "frameP95": 33.400000000001455,
+      "renderCpuP95": 12.899999991059303,
+      "calls": 191,
+      "triangles": 15598,
+      "heapBytes": 20500000,
+      "transferBytes": 3308890,
+      "errors": [],
+      "diagnostics": []
+    },
+    {
+      "stage": "before",
+      "viewport": "landscape",
+      "quality": "light",
+      "frameP50": 33.30000000000018,
+      "frameP95": 33.400000000000546,
+      "renderCpuP95": 4.899999991059303,
+      "calls": 229,
+      "triangles": 20780,
+      "heapBytes": 26000000,
+      "transferBytes": 3308890,
+      "errors": [],
+      "diagnostics": []
+    },
+    {
+      "stage": "before",
+      "viewport": "narrow",
+      "quality": "light",
+      "frameP50": 33.30000000000018,
+      "frameP95": 33.400000000000546,
+      "renderCpuP95": 4.299999997019768,
+      "calls": 211,
+      "triangles": 19826,
+      "heapBytes": 27600000,
+      "transferBytes": 3308890,
+      "errors": [],
+      "diagnostics": []
+    },
+    {
+      "stage": "after",
+      "viewport": "desktop",
+      "quality": "standard",
+      "frameP50": 33.30000000000109,
+      "frameP95": 33.400000000001455,
+      "renderCpuP95": 8.799999997019768,
+      "calls": 231,
+      "triangles": 126634,
+      "heapBytes": 31200000,
+      "transferBytes": 3424347,
+      "errors": [],
+      "diagnostics": []
+    },
+    {
+      "stage": "after",
+      "viewport": "landscape",
+      "quality": "light",
+      "frameP50": 33.30000000000109,
+      "frameP95": 33.400000000001455,
+      "renderCpuP95": 10.300000011920929,
+      "calls": 260,
+      "triangles": 106710,
+      "heapBytes": 35100000,
+      "transferBytes": 3424347,
+      "errors": [],
+      "diagnostics": []
+    },
+    {
+      "stage": "after",
+      "viewport": "narrow",
+      "quality": "light",
+      "frameP50": 33.30000000000109,
+      "frameP95": 50,
+      "renderCpuP95": 15.099999994039536,
+      "calls": 233,
+      "triangles": 103754,
+      "heapBytes": 39600000,
+      "transferBytes": 3424347,
+      "errors": [],
+      "diagnostics": []
+    }
+  ],
+  "resources": {
+    "src/presentation/artSample.ts": 8888,
+    "public/assets/presentation/art-sample.json": 7815,
+    "public/assets/presentation/textures/art-oak.png": 133371
+  },
+  "reviewChecks": {
+    "errors": [],
+    "diagnostics": [],
+    "pause": true,
+    "restart": true
+  }
+}
