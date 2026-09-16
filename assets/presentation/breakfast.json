@@ -1,15 +1,133 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "family-breakfast-scenario-04",
+  "version": "family-breakfast-art-01",
   "models": {
-    "environment.table-hem": {"bounds":[40,6,0.1]},
-    "environment.sink-tap": {"bounds":[0.28,5.2,5.78]},
-    "environment.working-toaster": {"bounds":[1.95,1.2,2.2]},
-    "environment.working-mixer": {"bounds":[2,2.2,2]},
-    "environment.torn-grain-bag": {"bounds":[2.5,1.3,3]},
-    "environment.berry": {"recipe":"berry-envelope","bounds":[0.84,0.84,0.84]},
-    "environment.toast": {"recipe":"toast-envelope","bounds":[1.3,1.7,0.24]},
+    "environment.table-hem": {
+      "bounds": [
+        40,
+        6,
+        0.1
+      ]
+    },
+    "environment.sink-tap": {
+      "file": "family/sink-tap.glb",
+      "lightFile": "family/sink-tap-light.glb",
+      "bounds": [
+        1.217986285686493,
+        5.224887890741229,
+        5.998384118080139
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.working-toaster": {
+      "file": "family/working-toaster.glb",
+      "lightFile": "family/working-toaster-light.glb",
+      "bounds": [
+        1.9175000190734863,
+        1.1899999976158142,
+        2.200000047683716
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.working-mixer": {
+      "file": "family/working-mixer.glb",
+      "lightFile": "family/working-mixer-light.glb",
+      "bounds": [
+        2.0549999475479126,
+        2.2135000228881836,
+        2.009999990463257
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.torn-grain-bag": {
+      "file": "family/torn-grain-bag.glb",
+      "lightFile": "family/torn-grain-bag-light.glb",
+      "bounds": [
+        2.5,
+        1.327616274356842,
+        3.003000020980835
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.berry": {
+      "recipe": "berry-envelope",
+      "bounds": [
+        0.84,
+        0.84,
+        0.84
+      ]
+    },
+    "environment.toast": {
+      "file": "family/toast.glb",
+      "lightFile": "family/toast-light.glb",
+      "bounds": [
+        1.2999999523162842,
+        1.7000000476837158,
+        0.2460000067949295
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
     "item.plate": {
       "file": "pbr/plate.glb",
       "bounds": [
@@ -386,41 +504,47 @@
       }
     },
     "environment.drawer-one-base": {
-      "file": "accident/drawer-one-base.glb",
-      "lightFile": "accident/drawer-one-base-light.glb",
+      "file": "family/drawer-one-base.glb",
+      "lightFile": "family/drawer-one-base-light.glb",
       "bounds": [
-        32,
+        32.09000015258789,
         4.900000095367432,
-        12.211892127990723
+        12.522988319396973
       ],
       "materials": {
-        "wood": "accident.wood",
-        "teal": "art.teal",
-        "cloth": "art.seatcloth",
-        "ceramic": "art.ceramic",
-        "red": "art.red",
-        "brass": "vehicle.brass",
-        "coffee": "accident.shell",
-        "dark": "vehicle.dark"
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
       }
     },
     "environment.drawer-two-base": {
-      "file": "accident/drawer-two-base.glb",
-      "lightFile": "accident/drawer-two-base-light.glb",
+      "file": "family/drawer-two-base.glb",
+      "lightFile": "family/drawer-two-base-light.glb",
       "bounds": [
-        34,
+        34.09000015258789,
         8.899999618530273,
-        8.211892127990723
+        8.522988319396973
       ],
       "materials": {
-        "wood": "accident.wood",
-        "teal": "art.teal",
-        "cloth": "art.seatcloth",
-        "ceramic": "art.ceramic",
-        "red": "art.red",
-        "brass": "vehicle.brass",
-        "coffee": "accident.shell",
-        "dark": "vehicle.dark"
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
       }
     },
     "environment.cup-shard-0": {
@@ -576,50 +700,401 @@
       }
     },
     "environment.cabinet-low-shelf": {
-      "file": "accident/cabinet-low-shelf-stable.glb",
-      "lightFile": "accident/cabinet-low-shelf-stable-light.glb",
+      "file": "family/cabinet-low-shelf.glb",
+      "lightFile": "family/cabinet-low-shelf-light.glb",
       "bounds": [
         44,
         0.30000001192092896,
-        23
+        23.030000686645508
       ],
       "materials": {
-        "wood": "accident.wood",
-        "teal": "art.teal",
-        "cloth": "art.seatcloth",
-        "ceramic": "art.ceramic",
-        "red": "art.red",
-        "brass": "vehicle.brass",
-        "coffee": "accident.shell",
-        "dark": "vehicle.dark"
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
       }
     },
-    "environment.accident-setting": {
-      "file": "accident/accident-setting.glb",
-      "lightFile": "accident/accident-setting-light.glb",
+    "environment.mixer-bowl": {
+      "file": "family/mixer-bowl.glb",
+      "lightFile": "family/mixer-bowl-light.glb",
       "bounds": [
-        130,
-        16.1499996304512,
-        113.9399995803833
+        2.359999895095825,
+        1.4179301857948303,
+        2.359999895095825
       ],
       "materials": {
-        "wood": "accident.wood",
-        "teal": "art.teal",
-        "cloth": "art.seatcloth",
-        "ceramic": "art.ceramic",
-        "red": "art.red",
-        "brass": "vehicle.brass",
-        "coffee": "accident.shell",
-        "dark": "vehicle.dark"
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.mixer-whisk": {
+      "file": "family/mixer-whisk.glb",
+      "lightFile": "family/mixer-whisk-light.glb",
+      "bounds": [
+        0.9358001351356506,
+        1.4920000433921814,
+        0.9358001351356506
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.mixer-arm": {
+      "file": "family/mixer-arm.glb",
+      "lightFile": "family/mixer-arm-light.glb",
+      "bounds": [
+        0.5799999833106995,
+        0.47804224491119385,
+        3.1000000536441803
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.family-setting": {
+      "file": "family/family-setting.glb",
+      "lightFile": "family/family-setting-light.glb",
+      "bounds": [
+        159.44999980926514,
+        25.500000190734866,
+        135.76999950408936
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.lower-board-family": {
+      "file": "family/lower-board-family.glb",
+      "lightFile": "family/lower-board-family-light.glb",
+      "bounds": [
+        10,
+        0.15600000321865082,
+        27.37468719482422
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.tray-board": {
+      "file": "family/tray-board.glb",
+      "lightFile": "family/tray-board-light.glb",
+      "bounds": [
+        10,
+        0.15600000321865082,
+        27.374679565429688
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.counter-board": {
+      "file": "family/counter-board.glb",
+      "lightFile": "family/counter-board-light.glb",
+      "bounds": [
+        10,
+        0.15600000321865082,
+        30.674116134643555
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.drawer-one-family": {
+      "file": "family/drawer-one-family.glb",
+      "lightFile": "family/drawer-one-family-light.glb",
+      "bounds": [
+        47,
+        0.30000001192092896,
+        26.030000686645508
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.drawer-two": {
+      "file": "family/drawer-two.glb",
+      "lightFile": "family/drawer-two-light.glb",
+      "bounds": [
+        13,
+        0.30000001192092896,
+        18.030000686645508
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.drawer-two-right": {
+      "file": "family/drawer-two-right.glb",
+      "lightFile": "family/drawer-two-right-light.glb",
+      "bounds": [
+        27,
+        0.30000001192092896,
+        23.030000686645508
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.counter-east": {
+      "file": "family/counter-east.glb",
+      "lightFile": "family/counter-east-light.glb",
+      "bounds": [
+        29,
+        0.30000001192092896,
+        30.030000686645508
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.sink-board": {
+      "file": "family/sink-board.glb",
+      "lightFile": "family/sink-board-light.glb",
+      "bounds": [
+        30.06964111328125,
+        0.4362964630126953,
+        5.4892730712890625
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.sink-rack-entry": {
+      "file": "family/sink-rack-entry.glb",
+      "lightFile": "family/sink-rack-entry-light.glb",
+      "bounds": [
+        6.071258544921875,
+        0.5399999618530273,
+        4.8000030517578125
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.sink-rack-deck": {
+      "file": "family/sink-rack-deck.glb",
+      "lightFile": "family/sink-rack-deck-light.glb",
+      "bounds": [
+        16,
+        0.38953685760498047,
+        4.8000030517578125
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.sink-rack-exit": {
+      "file": "family/sink-rack-exit.glb",
+      "lightFile": "family/sink-rack-exit-light.glb",
+      "bounds": [
+        6,
+        0.5399999618530273,
+        4.8000030517578125
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
+      }
+    },
+    "environment.plate-stack-426": {
+      "file": "family/plate-stack-426.glb",
+      "lightFile": "family/plate-stack-426-light.glb",
+      "bounds": [
+        2.3997039794921875,
+        0.7047129571437836,
+        2.3997039794921875
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "dark": "art.dark",
+        "sage": "family.sage",
+        "red": "family.red",
+        "cream": "family.cream",
+        "batter": "family.batter",
+        "crumb": "family.crumb",
+        "cloth": "family.linen",
+        "brass": "family.brass"
       }
     }
   },
   "materials": {
-    "event.crumb": {"color":"#d9b771","roughness":0.95},
-    "event.dust": {"color":"#f2e4c8","roughness":1},
-    "event.track": {"color":"#9b947f","roughness":1},
-    "event.berry": {"color":"#805da9","roughness":0.45},
-    "event.toast": {"color":"#d9aa63","roughness":0.95},
+    "event.crumb": {
+      "color": "#d9b771",
+      "roughness": 0.95
+    },
+    "event.dust": {
+      "color": "#f2e4c8",
+      "roughness": 1
+    },
+    "event.track": {
+      "color": "#9b947f",
+      "roughness": 1
+    },
+    "event.berry": {
+      "color": "#805da9",
+      "roughness": 0.45
+    },
+    "event.toast": {
+      "color": "#d9aa63",
+      "roughness": 0.95
+    },
     "boundary.panel": {
       "color": "#9bbabc",
       "roughness": 0.8
@@ -844,11 +1319,11 @@
     },
     "art.wood": {
       "color": "#ffffff",
-      "roughness": 1,
-      "metalness": 1,
+      "roughness": 0.92,
+      "metalness": 0,
       "normalScale": [
-        0.2,
-        0.2
+        0.035,
+        0.035
       ],
       "aoIntensity": 0.5,
       "baseColorMap": {
@@ -859,16 +1334,6 @@
       "normalMap": {
         "file": "pbr/oak-normal.png",
         "lightFile": "pbr/oak-normal-light.png",
-        "flipY": true
-      },
-      "roughnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
         "flipY": true
       },
       "aoMap": {
@@ -953,34 +1418,9 @@
       }
     },
     "art.brass": {
-      "color": "#d7b467",
-      "roughness": 1,
-      "metalness": 1,
-      "normalScale": [
-        0.2,
-        0.2
-      ],
-      "aoIntensity": 0.5,
-      "normalMap": {
-        "file": "pbr/steel-normal.png",
-        "lightFile": "pbr/steel-normal-light.png",
-        "flipY": true
-      },
-      "roughnessMap": {
-        "file": "pbr/steel-orm.png",
-        "lightFile": "pbr/steel-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
-        "file": "pbr/steel-orm.png",
-        "lightFile": "pbr/steel-orm-light.png",
-        "flipY": true
-      },
-      "aoMap": {
-        "file": "pbr/steel-orm.png",
-        "lightFile": "pbr/steel-orm-light.png",
-        "flipY": true
-      }
+      "color": "#b68c4f",
+      "roughness": 0.5,
+      "metalness": 0.6
     },
     "art.dark": {
       "color": "#383b36",
@@ -995,10 +1435,10 @@
     "art.cloth": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
-        0.2,
-        0.2
+        0.025,
+        0.025
       ],
       "aoIntensity": 0.5,
       "baseColorMap": {
@@ -1049,11 +1489,11 @@
     },
     "art.wall": {
       "color": "#ffffff",
-      "roughness": 1,
-      "metalness": 1,
+      "roughness": 0.9,
+      "metalness": 0,
       "normalScale": [
-        0.06,
-        0.06
+        0.025,
+        0.025
       ],
       "aoIntensity": 0.5,
       "baseColorMap": {
@@ -1065,34 +1505,7 @@
           6
         ]
       },
-      "normalMap": {
-        "file": "pbr/linen-normal.png",
-        "lightFile": "pbr/linen-normal-light.png",
-        "flipY": true,
-        "repeat": [
-          10,
-          6
-        ]
-      },
       "roughnessMap": {
-        "file": "pbr/linen-orm.png",
-        "lightFile": "pbr/linen-orm-light.png",
-        "flipY": true,
-        "repeat": [
-          10,
-          6
-        ]
-      },
-      "metalnessMap": {
-        "file": "pbr/linen-orm.png",
-        "lightFile": "pbr/linen-orm-light.png",
-        "flipY": true,
-        "repeat": [
-          10,
-          6
-        ]
-      },
-      "aoMap": {
         "file": "pbr/linen-orm.png",
         "lightFile": "pbr/linen-orm-light.png",
         "flipY": true,
@@ -1156,36 +1569,17 @@
       }
     },
     "art.tin": {
-      "color": "#ccd8d6",
-      "roughness": 1,
-      "metalness": 1,
-      "normalScale": [
-        0.2,
-        0.2
-      ],
-      "normalMap": {
-        "file": "pbr/steel-normal.png",
-        "lightFile": "pbr/steel-normal-light.png",
-        "flipY": true
-      },
-      "roughnessMap": {
-        "file": "pbr/steel-orm.png",
-        "lightFile": "pbr/steel-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
-        "file": "pbr/steel-orm.png",
-        "lightFile": "pbr/steel-orm-light.png",
-        "flipY": true
-      }
+      "color": "#aebfbd",
+      "roughness": 0.52,
+      "metalness": 0.72
     },
     "art.seatcloth": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
-        0.2,
-        0.2
+        0.025,
+        0.025
       ],
       "aoIntensity": 0.5,
       "baseColorMap": {
@@ -1275,11 +1669,11 @@
     },
     "art.lowerwall": {
       "color": "#9fcbbb",
-      "roughness": 1,
-      "metalness": 1,
+      "roughness": 0.9,
+      "metalness": 0,
       "normalScale": [
-        0.2,
-        0.2
+        0.025,
+        0.025
       ],
       "aoIntensity": 0.5,
       "baseColorMap": {
@@ -1291,34 +1685,7 @@
           2
         ]
       },
-      "normalMap": {
-        "file": "pbr/enamel-normal.png",
-        "lightFile": "pbr/enamel-normal-light.png",
-        "flipY": true,
-        "repeat": [
-          8,
-          2
-        ]
-      },
       "roughnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": true,
-        "repeat": [
-          8,
-          2
-        ]
-      },
-      "metalnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": true,
-        "repeat": [
-          8,
-          2
-        ]
-      },
-      "aoMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": true,
@@ -1640,11 +2007,11 @@
     },
     "accident.wood": {
       "color": "#cfaa76",
-      "roughness": 1,
-      "metalness": 1,
+      "roughness": 0.92,
+      "metalness": 0,
       "normalScale": [
-        0.2,
-        0.2
+        0.035,
+        0.035
       ],
       "aoIntensity": 0.5,
       "baseColorMap": {
@@ -1655,16 +2022,6 @@
       "normalMap": {
         "file": "pbr/oak-normal.png",
         "lightFile": "pbr/oak-normal-light.png",
-        "flipY": true
-      },
-      "roughnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
         "flipY": true
       },
       "aoMap": {
@@ -1689,13 +2046,101 @@
           35
         ]
       }
+    },
+    "family.steel": {
+      "color": "#aebfbd",
+      "roughness": 0.52,
+      "metalness": 0.72
+    },
+    "family.sage": {
+      "color": "#638f81",
+      "roughness": 0.48,
+      "metalness": 0.02
+    },
+    "family.red": {
+      "color": "#c94532",
+      "roughness": 0.38,
+      "metalness": 0.04
+    },
+    "family.cream": {
+      "color": "#f3e3be",
+      "roughness": 0.55,
+      "metalness": 0
+    },
+    "family.batter": {
+      "color": "#e2c18c",
+      "roughness": 0.82,
+      "metalness": 0
+    },
+    "family.crumb": {
+      "color": "#dfb372",
+      "roughness": 0.94,
+      "metalness": 0
+    },
+    "family.endgrain": {
+      "color": "#a48054",
+      "roughness": 0.78,
+      "metalness": 0
+    },
+    "family.brass": {
+      "color": "#b68c4f",
+      "roughness": 0.5,
+      "metalness": 0.6
+    },
+    "family.linen": {
+      "color": "#d6c49b",
+      "roughness": 0.95,
+      "metalness": 0
+    },
+    "family.wood": {
+      "color": "#ead5b2",
+      "roughness": 0.83,
+      "metalness": 0,
+      "baseColorMap": {
+        "file": "pbr/oak-color.webp",
+        "lightFile": "pbr/oak-color-light.webp",
+        "flipY": false
+      },
+      "normalMap": {
+        "file": "pbr/oak-normal.png",
+        "lightFile": "pbr/oak-normal-light.png",
+        "flipY": false
+      },
+      "normalScale": [
+        0.035,
+        0.035
+      ]
     }
   },
   "audio": {
-    "event.toast.warning": {"files":["audio/metal.wav"],"gain":0.22,"cooldown":0.2},
-    "environment.water-drop": {"files":["audio/kitchen-drop.mp3"],"gain":0.32,"cooldown":0.5},
-    "event.toast.active": {"files":["audio/detach.wav"],"gain":0.3,"cooldown":0.2},
-    "event.toast.settled": {"files":["audio/fabric.wav"],"gain":0.2,"cooldown":0.2},
+    "event.toast.warning": {
+      "files": [
+        "audio/metal.wav"
+      ],
+      "gain": 0.22,
+      "cooldown": 0.2
+    },
+    "environment.water-drop": {
+      "files": [
+        "audio/kitchen-drop.mp3"
+      ],
+      "gain": 0.32,
+      "cooldown": 0.5
+    },
+    "event.toast.active": {
+      "files": [
+        "audio/detach.wav"
+      ],
+      "gain": 0.3,
+      "cooldown": 0.2
+    },
+    "event.toast.settled": {
+      "files": [
+        "audio/fabric.wav"
+      ],
+      "gain": 0.2,
+      "cooldown": 0.2
+    },
     "ambience.wind": {
       "files": [
         "audio/wind.wav"
