@@ -1,14 +1,10 @@
 {
   "schema": 1,
   "id": "breakfast",
-  "version": "family-breakfast-art-01",
+  "version": "release-art-2026-09-17",
   "models": {
     "environment.table-hem": {
-      "bounds": [
-        40,
-        6,
-        0.1
-      ]
+      "recipe": "runtime.reactive-tablecloth"
     },
     "environment.sink-tap": {
       "file": "family/sink-tap.glb",
@@ -99,12 +95,20 @@
       }
     },
     "environment.berry": {
-      "recipe": "berry-envelope",
+      "file": "release-kitchen/berry.glb",
+      "lightFile": "release-kitchen/berry-light.glb",
       "bounds": [
-        0.84,
-        0.84,
-        0.84
-      ]
+        0.835999995470047,
+        0.8574862778186798,
+        0.8274907469749451
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen"
+      }
     },
     "environment.toast": {
       "file": "family/toast.glb",
@@ -171,17 +175,47 @@
       }
     },
     "item.toaster": {
-      "file": "models/toaster.gltf",
+      "file": "release/toaster.glb",
+      "lightFile": "release/toaster-light.glb",
       "bounds": [
-        0.52,
-        0.642,
-        0.495
+        0.5689999759197235,
+        0.6299999952316284,
+        0.47999998927116394
       ]
     },
-    "item.pan": {},
-    "item.wood-cube": {},
+    "item.pan": {
+      "file": "release/pan.glb",
+      "lightFile": "release/pan-light.glb",
+      "bounds": [
+        0.10000000149011612,
+        0.7620000243186951,
+        1.0309999883174896
+      ]
+    },
+    "item.wood-cube": {
+      "file": "release/wood-cube.glb",
+      "lightFile": "release/wood-cube-light.glb",
+      "bounds": [
+        0.652999997138977,
+        0.6646295785903931,
+        0.6200000047683716
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain"
+      }
+    },
     "item.pillow": {
-      "recipe": "ribbon.cushion"
+      "file": "release/pillow.glb",
+      "lightFile": "release/pillow-light.glb",
+      "bounds": [
+        0.801100879907608,
+        0.7900000214576721,
+        0.8011190295219421
+      ],
+      "materials": {
+        "linen": "vehicle.cloth"
+      }
     },
     "seat.pillow": {
       "offset": [
@@ -241,29 +275,149 @@
         "ceramic": "vehicle.ceramic"
       }
     },
-    "item.driver": {},
-    "item.lid": {},
-    "item.mug": {},
-    "item.board": {},
-    "item.tape": {},
-    "item.yoyo": {},
-    "item.chainsaw": {},
-    "item.kettle": {},
-    "item.hamster": {
-      "file": "models/hamster.gltf",
+    "item.driver": {
+      "offset": [
+        0,
+        -0.96,
+        0
+      ],
+      "freeOffset": [
+        0,
+        0,
+        0
+      ],
+      "file": "pbr/mira.glb",
+      "lightFile": "pbr/mira-light.glb",
       "bounds": [
-        0.35,
-        0.712,
-        0.664
+        0.5120000243186951,
+        0.6548454761505127,
+        0.3719598799943924
+      ],
+      "materials": {
+        "plastic": "vehicle.plastic",
+        "steel": "vehicle.metal",
+        "brass": "vehicle.brass",
+        "red": "vehicle.red",
+        "ivory": "vehicle.ivory",
+        "dark": "vehicle.dark",
+        "fur": "vehicle.fur",
+        "skin": "vehicle.skin",
+        "leather": "vehicle.leather",
+        "linen": "vehicle.cloth",
+        "white": "vehicle.white",
+        "mouth": "vehicle.mouth",
+        "thimble": "vehicle.thimble",
+        "ceramic": "vehicle.ceramic"
+      },
+      "requiredNodes": [
+        "pelvis",
+        "hand_left",
+        "hand_right",
+        "foot_left",
+        "foot_right"
+      ],
+      "animations": {
+        "idle": "seated_idle",
+        "driving": "seated_drive",
+        "ejected": "airborne"
+      }
+    },
+    "item.lid": {
+      "file": "release/lid.glb",
+      "lightFile": "release/lid-light.glb",
+      "bounds": [
+        0.1896570585668087,
+        0.6817083954811096,
+        0.6817083954811096
       ]
     },
-    "item.spool": {},
-    "item.colander": {
-      "file": "models/colander.gltf",
+    "item.mug": {
+      "file": "release/mug.glb",
+      "lightFile": "release/mug-light.glb",
       "bounds": [
-        0.12,
-        0.68,
-        0.94
+        0.37345656752586365,
+        0.5186458230018616,
+        0.6582126617431641
+      ]
+    },
+    "item.board": {
+      "file": "release/board.glb",
+      "lightFile": "release/board-light.glb",
+      "bounds": [
+        0.09541267901659012,
+        0.6499999761581421,
+        0.8500000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain"
+      }
+    },
+    "item.tape": {
+      "file": "release/tape.glb",
+      "lightFile": "release/tape-light.glb",
+      "bounds": [
+        0.23355092853307724,
+        0.6936753988265991,
+        0.6936753988265991
+      ]
+    },
+    "item.yoyo": {
+      "file": "release/yoyo.glb",
+      "lightFile": "release/yoyo-light.glb",
+      "bounds": [
+        0.2639999985694885,
+        0.6799588799476624,
+        0.6799588799476624
+      ]
+    },
+    "item.chainsaw": {
+      "file": "release/chainsaw.glb",
+      "lightFile": "release/chainsaw-light.glb",
+      "bounds": [
+        0.5382748246192932,
+        0.39279016852378845,
+        0.8629999905824661
+      ]
+    },
+    "item.kettle": {
+      "file": "release/kettle.glb",
+      "lightFile": "release/kettle-light.glb",
+      "bounds": [
+        0.5512465834617615,
+        0.5557641535997391,
+        0.7116232812404633
+      ]
+    },
+    "item.hamster": {
+      "file": "release/hamster.glb",
+      "lightFile": "release/hamster-light.glb",
+      "bounds": [
+        0.3719959855079651,
+        0.6969999969005585,
+        0.6539999842643738
+      ]
+    },
+    "item.spool": {
+      "file": "release/spool.glb",
+      "lightFile": "release/spool-light.glb",
+      "bounds": [
+        0.32711902260780334,
+        0.6089301109313965,
+        0.6089301109313965
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain"
+      }
+    },
+    "item.colander": {
+      "file": "release/colander.glb",
+      "lightFile": "release/colander-light.glb",
+      "bounds": [
+        0.12358991801738739,
+        0.6847666501998901,
+        0.9765822291374207
       ]
     },
     "chassis.plastic-basket": {
@@ -291,8 +445,28 @@
         1.718000054359436
       ]
     },
-    "chassis.wood-crate": {},
-    "chassis.metal-toolbox": {},
+    "chassis.wood-crate": {
+      "file": "release/wood-crate.glb",
+      "lightFile": "release/wood-crate-light.glb",
+      "bounds": [
+        1.600000023841858,
+        0.4895000010728836,
+        1.8639999628067017
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain"
+      }
+    },
+    "chassis.metal-toolbox": {
+      "file": "release/metal-toolbox.glb",
+      "lightFile": "release/metal-toolbox-light.glb",
+      "bounds": [
+        1.5640000104904175,
+        0.3720000088214874,
+        1.8339999914169312
+      ]
+    },
     "driver.mira": {
       "offset": [
         0,
@@ -340,8 +514,68 @@
         "ejected": "airborne"
       }
     },
-    "driver.bork": {},
-    "driver.lio": {},
+    "driver.bork": {
+      "file": "release/bork.glb",
+      "lightFile": "release/bork-light.glb",
+      "bounds": [
+        0.3218211829662323,
+        0.7099999785423279,
+        0.35099999606609344
+      ],
+      "offset": [
+        0,
+        -0.96,
+        0
+      ],
+      "freeOffset": [
+        0,
+        0,
+        0
+      ],
+      "requiredNodes": [
+        "pelvis",
+        "hand_left",
+        "hand_right",
+        "foot_left",
+        "foot_right"
+      ],
+      "animations": {
+        "idle": "idle",
+        "driving": "driving",
+        "ejected": "ejected"
+      }
+    },
+    "driver.lio": {
+      "file": "release/lio.glb",
+      "lightFile": "release/lio-light.glb",
+      "bounds": [
+        0.3700000047683716,
+        0.6225999891757965,
+        0.31300000101327896
+      ],
+      "offset": [
+        0,
+        -0.96,
+        0
+      ],
+      "freeOffset": [
+        0,
+        0,
+        0
+      ],
+      "requiredNodes": [
+        "pelvis",
+        "hand_left",
+        "hand_right",
+        "foot_left",
+        "foot_right"
+      ],
+      "animations": {
+        "idle": "idle",
+        "driving": "driving",
+        "ejected": "ejected"
+      }
+    },
     "environment.arch": {
       "recipe": "environment.arch"
     },
@@ -1052,26 +1286,1373 @@
       }
     },
     "environment.plate-stack-426": {
-      "file": "family/plate-stack-426.glb",
-      "lightFile": "family/plate-stack-426-light.glb",
+      "file": "release-kitchen/plate-stack-426.glb",
+      "lightFile": "release-kitchen/plate-stack-426-light.glb",
       "bounds": [
-        2.3997039794921875,
-        0.7047129571437836,
-        2.3997039794921875
+        2.401012420654297,
+        0.7259775996208191,
+        2.401012420654297
       ],
       "materials": {
         "wood": "family.wood",
         "edge": "family.endgrain",
         "steel": "family.steel",
-        "dark": "art.dark",
-        "sage": "family.sage",
-        "red": "family.red",
-        "cream": "family.cream",
-        "batter": "family.batter",
-        "crumb": "family.crumb",
-        "cloth": "family.linen",
-        "brass": "family.brass"
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
       }
+    },
+    "environment.table-top": {
+      "file": "release-kitchen/table-top.glb",
+      "lightFile": "release-kitchen/table-top-light.glb",
+      "bounds": [
+        66,
+        0.4300000071525574,
+        40
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.table-leg-43-25": {
+      "file": "release-kitchen/table-leg-43-25.glb",
+      "lightFile": "release-kitchen/table-leg-43-25-light.glb",
+      "bounds": [
+        2.2200000286102295,
+        15,
+        2.2200000286102295
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.table-leg-43-65": {
+      "file": "release-kitchen/table-leg-43-65.glb",
+      "lightFile": "release-kitchen/table-leg-43-65-light.glb",
+      "bounds": [
+        2.2200000286102295,
+        15,
+        2.2200000286102295
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.table-leg-107-25": {
+      "file": "release-kitchen/table-leg-107-25.glb",
+      "lightFile": "release-kitchen/table-leg-107-25-light.glb",
+      "bounds": [
+        2.2200000286102295,
+        15,
+        2.2200000286102295
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.table-leg-107-65": {
+      "file": "release-kitchen/table-leg-107-65.glb",
+      "lightFile": "release-kitchen/table-leg-107-65-light.glb",
+      "bounds": [
+        2.2200000286102295,
+        15,
+        2.2200000286102295
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.fridge-tray": {
+      "file": "release-kitchen/fridge-tray.glb",
+      "lightFile": "release-kitchen/fridge-tray-light.glb",
+      "bounds": [
+        32,
+        0.30000001192092896,
+        35
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.fridge-tray-entry": {
+      "file": "release-kitchen/fridge-tray-entry.glb",
+      "lightFile": "release-kitchen/fridge-tray-entry-light.glb",
+      "bounds": [
+        25,
+        0.30000001192092896,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.fridge-case": {
+      "file": "release-kitchen/fridge-case.glb",
+      "lightFile": "release-kitchen/fridge-case-light.glb",
+      "bounds": [
+        8.135000228881836,
+        38,
+        39
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.fridge-open-door": {
+      "file": "release-kitchen/fridge-open-door.glb",
+      "lightFile": "release-kitchen/fridge-open-door-light.glb",
+      "bounds": [
+        36,
+        38,
+        2.910597801208496
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.fridge-vegetable-bin": {
+      "file": "release-kitchen/fridge-vegetable-bin.glb",
+      "lightFile": "release-kitchen/fridge-vegetable-bin-light.glb",
+      "bounds": [
+        10.130000114440918,
+        4.674999952316284,
+        12.432417392730713
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.fridge-shelf-overhang": {
+      "file": "release-kitchen/fridge-shelf-overhang.glb",
+      "lightFile": "release-kitchen/fridge-shelf-overhang-light.glb",
+      "bounds": [
+        18,
+        0.30000001192092896,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.dishwasher-stool": {
+      "file": "release-kitchen/dishwasher-stool.glb",
+      "lightFile": "release-kitchen/dishwasher-stool-light.glb",
+      "bounds": [
+        6,
+        0.3110000044107437,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.descent-stool-leg-66.5-101": {
+      "file": "release-kitchen/descent-stool-leg-66.5-101.glb",
+      "lightFile": "release-kitchen/descent-stool-leg-66.5-101-light.glb",
+      "bounds": [
+        0.6200000047683716,
+        7.300000190734863,
+        0.6200000047683716
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.descent-stool-leg-66.5-111": {
+      "file": "release-kitchen/descent-stool-leg-66.5-111.glb",
+      "lightFile": "release-kitchen/descent-stool-leg-66.5-111-light.glb",
+      "bounds": [
+        0.6200000047683716,
+        7.300000190734863,
+        0.6200000047683716
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.descent-stool-leg-71.5-101": {
+      "file": "release-kitchen/descent-stool-leg-71.5-101.glb",
+      "lightFile": "release-kitchen/descent-stool-leg-71.5-101-light.glb",
+      "bounds": [
+        0.6200000047683716,
+        7.300000190734863,
+        0.6200000047683716
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.descent-stool-leg-71.5-111": {
+      "file": "release-kitchen/descent-stool-leg-71.5-111.glb",
+      "lightFile": "release-kitchen/descent-stool-leg-71.5-111-light.glb",
+      "bounds": [
+        0.6200000047683716,
+        7.300000190734863,
+        0.6200000047683716
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.dishwasher-door": {
+      "file": "release-kitchen/dishwasher-door.glb",
+      "lightFile": "release-kitchen/dishwasher-door-light.glb",
+      "bounds": [
+        12,
+        0.33500000834465027,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.dishwasher-case-back": {
+      "file": "release-kitchen/dishwasher-case-back.glb",
+      "lightFile": "release-kitchen/dishwasher-case-back-light.glb",
+      "bounds": [
+        12,
+        15.199999809265137,
+        2.2155951261520386
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.dishwasher-case-side-28": {
+      "file": "release-kitchen/dishwasher-case-side-28.glb",
+      "lightFile": "release-kitchen/dishwasher-case-side-28-light.glb",
+      "bounds": [
+        1.0399999618530273,
+        15.199999809265137,
+        10
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.dishwasher-case-side-40": {
+      "file": "release-kitchen/dishwasher-case-side-40.glb",
+      "lightFile": "release-kitchen/dishwasher-case-side-40-light.glb",
+      "bounds": [
+        1.0399999618530273,
+        15.199999809265137,
+        10
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.dishwasher-case-top": {
+      "file": "release-kitchen/dishwasher-case-top.glb",
+      "lightFile": "release-kitchen/dishwasher-case-top-light.glb",
+      "bounds": [
+        13,
+        0.357000008225441,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.dishwasher-hinge": {
+      "file": "release-kitchen/dishwasher-hinge.glb",
+      "lightFile": "release-kitchen/dishwasher-hinge-light.glb",
+      "bounds": [
+        12,
+        0.25,
+        0.30000001192092896
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.trolley-shelf": {
+      "file": "release-kitchen/trolley-shelf.glb",
+      "lightFile": "release-kitchen/trolley-shelf-light.glb",
+      "bounds": [
+        8,
+        0.3125,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.trolley-post-50.4": {
+      "file": "release-kitchen/trolley-post-50.4.glb",
+      "lightFile": "release-kitchen/trolley-post-50.4-light.glb",
+      "bounds": [
+        0.9205546379089355,
+        8.046756744384766,
+        0.9205546379089355
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.trolley-wheel-50.4": {
+      "file": "release-kitchen/trolley-wheel-50.4.glb",
+      "lightFile": "release-kitchen/trolley-wheel-50.4-light.glb",
+      "bounds": [
+        1,
+        0.7159925699234009,
+        0.7159925699234009
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.dark"
+      }
+    },
+    "environment.trolley-post-61.6": {
+      "file": "release-kitchen/trolley-post-61.6.glb",
+      "lightFile": "release-kitchen/trolley-post-61.6-light.glb",
+      "bounds": [
+        0.9205546379089355,
+        8.046756744384766,
+        0.9205546379089355
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.trolley-wheel-61.6": {
+      "file": "release-kitchen/trolley-wheel-61.6.glb",
+      "lightFile": "release-kitchen/trolley-wheel-61.6-light.glb",
+      "bounds": [
+        1,
+        0.7159925699234009,
+        0.7159925699234009
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.dark"
+      }
+    },
+    "environment.trolley-upper-shelf": {
+      "file": "release-kitchen/trolley-upper-shelf.glb",
+      "lightFile": "release-kitchen/trolley-upper-shelf-light.glb",
+      "bounds": [
+        8,
+        0.3125,
+        12
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.counter-support-148-91": {
+      "file": "release-kitchen/counter-support-148-91.glb",
+      "lightFile": "release-kitchen/counter-support-148-91-light.glb",
+      "bounds": [
+        2.0199999809265137,
+        14.899999618530273,
+        2.0199999809265137
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.counter-support-160-117": {
+      "file": "release-kitchen/counter-support-160-117.glb",
+      "lightFile": "release-kitchen/counter-support-160-117-light.glb",
+      "bounds": [
+        2.0199999809265137,
+        14.899999618530273,
+        2.0199999809265137
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.counter-support-101-117": {
+      "file": "release-kitchen/counter-support-101-117.glb",
+      "lightFile": "release-kitchen/counter-support-101-117-light.glb",
+      "bounds": [
+        2.0199999809265137,
+        14.899999618530273,
+        2.0199999809265137
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cream"
+      }
+    },
+    "environment.fridge-lid": {
+      "file": "release-kitchen/fridge-lid.glb",
+      "lightFile": "release-kitchen/fridge-lid-light.glb",
+      "bounds": [
+        12,
+        0.15000000596046448,
+        16.124937057495117
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.dishwasher-upper-board": {
+      "file": "release-kitchen/dishwasher-upper-board.glb",
+      "lightFile": "release-kitchen/dishwasher-upper-board-light.glb",
+      "bounds": [
+        10,
+        0.16100000590085983,
+        38.832550048828125
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.dishwasher-lower-board": {
+      "file": "release-kitchen/dishwasher-lower-board.glb",
+      "lightFile": "release-kitchen/dishwasher-lower-board-light.glb",
+      "bounds": [
+        10,
+        0.16100000590085983,
+        32.71372604370117
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.dishwasher-exit-board": {
+      "file": "release-kitchen/dishwasher-exit-board.glb",
+      "lightFile": "release-kitchen/dishwasher-exit-board-light.glb",
+      "bounds": [
+        10,
+        0.16100000590085983,
+        6.176990032196045
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.trolley-tray": {
+      "file": "release-kitchen/trolley-tray.glb",
+      "lightFile": "release-kitchen/trolley-tray-light.glb",
+      "bounds": [
+        10,
+        0.16250000149011612,
+        4.159215450286865
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.trolley-towel": {
+      "file": "release-kitchen/trolley-towel.glb",
+      "lightFile": "release-kitchen/trolley-towel-light.glb",
+      "bounds": [
+        10,
+        0.16250000149011612,
+        4.159215450286865
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cloth"
+      }
+    },
+    "environment.dishwasher-plate--5.3-0": {
+      "file": "release-kitchen/dishwasher-plate--5.3-0.glb",
+      "lightFile": "release-kitchen/dishwasher-plate--5.3-0-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate--5.3-1": {
+      "file": "release-kitchen/dishwasher-plate--5.3-1.glb",
+      "lightFile": "release-kitchen/dishwasher-plate--5.3-1-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate--5.3-2": {
+      "file": "release-kitchen/dishwasher-plate--5.3-2.glb",
+      "lightFile": "release-kitchen/dishwasher-plate--5.3-2-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate--5.3-3": {
+      "file": "release-kitchen/dishwasher-plate--5.3-3.glb",
+      "lightFile": "release-kitchen/dishwasher-plate--5.3-3-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate-5.3-0": {
+      "file": "release-kitchen/dishwasher-plate-5.3-0.glb",
+      "lightFile": "release-kitchen/dishwasher-plate-5.3-0-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate-5.3-1": {
+      "file": "release-kitchen/dishwasher-plate-5.3-1.glb",
+      "lightFile": "release-kitchen/dishwasher-plate-5.3-1-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate-5.3-2": {
+      "file": "release-kitchen/dishwasher-plate-5.3-2.glb",
+      "lightFile": "release-kitchen/dishwasher-plate-5.3-2-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.dishwasher-plate-5.3-3": {
+      "file": "release-kitchen/dishwasher-plate-5.3-3.glb",
+      "lightFile": "release-kitchen/dishwasher-plate-5.3-3-light.glb",
+      "bounds": [
+        4.000021457672119,
+        0.16674652695655823,
+        4.000021457672119
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "environment.breakfast-slipper": {
+      "file": "release-kitchen/breakfast-slipper.glb",
+      "lightFile": "release-kitchen/breakfast-slipper-light.glb",
+      "bounds": [
+        3,
+        0.4599999934434891,
+        6
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cloth"
+      }
+    },
+    "environment.plate-stack-569": {
+      "file": "release-kitchen/plate-stack-569.glb",
+      "lightFile": "release-kitchen/plate-stack-569-light.glb",
+      "bounds": [
+        2.401012420654297,
+        0.7259775996208191,
+        2.401012420654297
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.ceramic"
+      }
+    },
+    "coin.scrap": {
+      "file": "release/coin-scrap.glb",
+      "lightFile": "release/coin-scrap-light.glb",
+      "bounds": [
+        0.5199999809265137,
+        0.07100000232458115,
+        0.5199999809265137
+      ]
+    },
+    "cargo.box": {
+      "file": "release/cargo-box.glb",
+      "lightFile": "release/cargo-box-light.glb",
+      "bounds": [
+        0.6359999775886536,
+        0.6499999761581421,
+        0.656499981880188
+      ]
+    },
+    "bonus.boost": {
+      "file": "release/bonus-boost.glb",
+      "lightFile": "release/bonus-boost-light.glb",
+      "bounds": [
+        0.5293499231338501,
+        0.7352047264575958,
+        0.5326749682426453
+      ]
+    },
+    "bonus.energy": {
+      "file": "release/bonus-energy.glb",
+      "lightFile": "release/bonus-energy-light.glb",
+      "bounds": [
+        0.5293499231338501,
+        0.7352047264575958,
+        0.5293499231338501
+      ]
+    },
+    "bonus.foam": {
+      "file": "release/bonus-foam.glb",
+      "lightFile": "release/bonus-foam-light.glb",
+      "bounds": [
+        0.5293499231338501,
+        0.7352047264575958,
+        0.5293499231338501
+      ]
+    },
+    "bonus.shield": {
+      "file": "release/bonus-shield.glb",
+      "lightFile": "release/bonus-shield-light.glb",
+      "bounds": [
+        0.6322842836380005,
+        0.7632529735565186,
+        0.15626151487231255
+      ]
+    },
+    "bonus.grip": {
+      "file": "release/bonus-grip.glb",
+      "lightFile": "release/bonus-grip-light.glb",
+      "bounds": [
+        0.6899999976158142,
+        0.6899999976158142,
+        0.18000000715255737
+      ]
+    },
+    "bonus.cooling": {
+      "file": "release/bonus-cooling.glb",
+      "lightFile": "release/bonus-cooling-light.glb",
+      "bounds": [
+        0.5293499231338501,
+        0.7352047264575958,
+        0.5293499231338501
+      ]
+    },
+    "environment.release-setting": {
+      "file": "release-kitchen/release-setting.glb",
+      "lightFile": "release-kitchen/release-setting-light.glb",
+      "bounds": [
+        177.94000673294067,
+        41.39510726928711,
+        135.96249771118164
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen"
+      }
+    },
+    "environment.room-plinth-west": {
+      "file": "release-kitchen/room-plinth-west.glb",
+      "lightFile": "release-kitchen/room-plinth-west-light.glb",
+      "bounds": [
+        2,
+        35,
+        140
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.lowerwall"
+      }
+    },
+    "environment.room-wall-north": {
+      "file": "release-kitchen/room-wall-north.glb",
+      "lightFile": "release-kitchen/room-wall-north-light.glb",
+      "bounds": [
+        180,
+        35,
+        2
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wall"
+      }
+    },
+    "environment.room-wall-back": {
+      "file": "release-kitchen/room-wall-back.glb",
+      "lightFile": "release-kitchen/room-wall-back-light.glb",
+      "bounds": [
+        180,
+        35,
+        2
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wall"
+      }
+    },
+    "environment.sink-back-rim": {
+      "file": "release-kitchen/sink-back-rim.glb",
+      "lightFile": "release-kitchen/sink-back-rim-light.glb",
+      "bounds": [
+        28,
+        0.30000001192092896,
+        8
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.sink-front-rim": {
+      "file": "release-kitchen/sink-front-rim.glb",
+      "lightFile": "release-kitchen/sink-front-rim-light.glb",
+      "bounds": [
+        28,
+        0.30000001192092896,
+        5
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.sink-bowl": {
+      "file": "release-kitchen/sink-bowl.glb",
+      "lightFile": "release-kitchen/sink-bowl-light.glb",
+      "bounds": [
+        27,
+        0.30000001192092896,
+        18
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.berry-tray-slope": {
+      "file": "release-kitchen/berry-tray-slope.glb",
+      "lightFile": "release-kitchen/berry-tray-slope-light.glb",
+      "bounds": [
+        1.399999976158142,
+        0.12199999764561653,
+        2.799999952316284
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.tin"
+      }
+    },
+    "environment.grain-heap-0": {
+      "file": "release-kitchen/grain-heap-0.glb",
+      "lightFile": "release-kitchen/grain-heap-0-light.glb",
+      "bounds": [
+        0.20000000298023224,
+        0.20232869684696198,
+        0.19796428084373474
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-1": {
+      "file": "release-kitchen/grain-heap-1.glb",
+      "lightFile": "release-kitchen/grain-heap-1-light.glb",
+      "bounds": [
+        0.25,
+        0.25291086733341217,
+        0.24745535850524902
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-2": {
+      "file": "release-kitchen/grain-heap-2.glb",
+      "lightFile": "release-kitchen/grain-heap-2-light.glb",
+      "bounds": [
+        0.30000001192092896,
+        0.30349305272102356,
+        0.2969464361667633
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-3": {
+      "file": "release-kitchen/grain-heap-3.glb",
+      "lightFile": "release-kitchen/grain-heap-3-light.glb",
+      "bounds": [
+        0.20000000298023224,
+        0.20232869684696198,
+        0.19796428084373474
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-4": {
+      "file": "release-kitchen/grain-heap-4.glb",
+      "lightFile": "release-kitchen/grain-heap-4-light.glb",
+      "bounds": [
+        0.25,
+        0.25291086733341217,
+        0.24745535850524902
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-5": {
+      "file": "release-kitchen/grain-heap-5.glb",
+      "lightFile": "release-kitchen/grain-heap-5-light.glb",
+      "bounds": [
+        0.30000001192092896,
+        0.30349305272102356,
+        0.2969464361667633
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-6": {
+      "file": "release-kitchen/grain-heap-6.glb",
+      "lightFile": "release-kitchen/grain-heap-6-light.glb",
+      "bounds": [
+        0.20000000298023224,
+        0.20232869684696198,
+        0.19796428084373474
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-7": {
+      "file": "release-kitchen/grain-heap-7.glb",
+      "lightFile": "release-kitchen/grain-heap-7-light.glb",
+      "bounds": [
+        0.25,
+        0.25291086733341217,
+        0.24745535850524902
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.grain-heap-8": {
+      "file": "release-kitchen/grain-heap-8.glb",
+      "lightFile": "release-kitchen/grain-heap-8-light.glb",
+      "bounds": [
+        0.30000001192092896,
+        0.30349305272102356,
+        0.2969464361667633
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.grain"
+      }
+    },
+    "environment.optional-towel-ramp": {
+      "file": "release-kitchen/optional-towel-ramp.glb",
+      "lightFile": "release-kitchen/optional-towel-ramp-light.glb",
+      "bounds": [
+        3,
+        0.1249999962747097,
+        5.015000104904175
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.cloth"
+      }
+    },
+    "environment.window-pane": {
+      "file": "release-kitchen/window-pane.glb",
+      "lightFile": "release-kitchen/window-pane-light.glb",
+      "bounds": [
+        28,
+        16,
+        0.4000000059604645
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.window"
+      }
+    },
+    "environment.window-frame-x-110": {
+      "file": "release-kitchen/window-frame-x-110.glb",
+      "lightFile": "release-kitchen/window-frame-x-110-light.glb",
+      "bounds": [
+        0.3499999940395355,
+        16,
+        0.6000000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.window-frame-x-124": {
+      "file": "release-kitchen/window-frame-x-124.glb",
+      "lightFile": "release-kitchen/window-frame-x-124-light.glb",
+      "bounds": [
+        0.3499999940395355,
+        16,
+        0.6000000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.window-frame-x-138": {
+      "file": "release-kitchen/window-frame-x-138.glb",
+      "lightFile": "release-kitchen/window-frame-x-138-light.glb",
+      "bounds": [
+        0.3499999940395355,
+        16,
+        0.6000000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.window-frame-y-17": {
+      "file": "release-kitchen/window-frame-y-17.glb",
+      "lightFile": "release-kitchen/window-frame-y-17-light.glb",
+      "bounds": [
+        28,
+        0.3499999940395355,
+        0.6000000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.window-frame-y-25": {
+      "file": "release-kitchen/window-frame-y-25.glb",
+      "lightFile": "release-kitchen/window-frame-y-25-light.glb",
+      "bounds": [
+        28,
+        0.3499999940395355,
+        0.6000000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.window-frame-y-33": {
+      "file": "release-kitchen/window-frame-y-33.glb",
+      "lightFile": "release-kitchen/window-frame-y-33-light.glb",
+      "bounds": [
+        28,
+        0.3499999940395355,
+        0.6000000238418579
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.teal"
+      }
+    },
+    "environment.finish-paper": {
+      "file": "release-kitchen/finish-paper.glb",
+      "lightFile": "release-kitchen/finish-paper-light.glb",
+      "bounds": [
+        0.10000000149011612,
+        1.2000000476837158,
+        13
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "hazard.finish"
+      }
+    },
+    "environment.finish-peg--6.5": {
+      "file": "release-kitchen/finish-peg--6.5.glb",
+      "lightFile": "release-kitchen/finish-peg--6.5-light.glb",
+      "bounds": [
+        0.20000000298023224,
+        7,
+        0.20000000298023224
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.finish-peg-6.5": {
+      "file": "release-kitchen/finish-peg-6.5.glb",
+      "lightFile": "release-kitchen/finish-peg-6.5-light.glb",
+      "bounds": [
+        0.20000000298023224,
+        7,
+        0.20000000298023224
+      ],
+      "materials": {
+        "wood": "family.wood",
+        "edge": "family.endgrain",
+        "steel": "family.steel",
+        "brass": "family.brass",
+        "linen": "family.linen",
+        "surface": "art.wood"
+      }
+    },
+    "environment.room-floor": {
+      "recipe": "runtime.kitchen-floor"
+    },
+    "environment.appliance-cord-crossing": {
+      "recipe": "runtime.appliance-cord"
     }
   },
   "materials": {
@@ -1137,7 +2718,7 @@
     "vehicle.ceramic": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.06,
         0.06
@@ -1158,11 +2739,6 @@
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
@@ -1172,7 +2748,7 @@
     "vehicle.cloth": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1193,11 +2769,6 @@
         "lightFile": "pbr/linen-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/linen-orm.png",
-        "lightFile": "pbr/linen-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/linen-orm.png",
         "lightFile": "pbr/linen-orm-light.png",
@@ -1207,7 +2778,7 @@
     "vehicle.plastic": {
       "color": "#148d80",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1219,11 +2790,6 @@
         "flipY": false
       },
       "roughnessMap": {
-        "file": "pbr/plastic-orm.png",
-        "lightFile": "pbr/plastic-orm-light.png",
-        "flipY": false
-      },
-      "metalnessMap": {
         "file": "pbr/plastic-orm.png",
         "lightFile": "pbr/plastic-orm-light.png",
         "flipY": false
@@ -1267,7 +2833,7 @@
     "road": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1284,11 +2850,6 @@
         "flipY": true
       },
       "roughnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
         "file": "pbr/oak-orm.png",
         "lightFile": "pbr/oak-orm-light.png",
         "flipY": true
@@ -1350,7 +2911,7 @@
     "art.teal": {
       "color": "#52b9a8",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1362,11 +2923,6 @@
         "flipY": true
       },
       "roughnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": true
@@ -1390,7 +2946,7 @@
     "art.ceramic": {
       "color": "#fff5de",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1402,11 +2958,6 @@
         "flipY": true
       },
       "roughnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": true
@@ -1460,15 +3011,6 @@
         ]
       },
       "roughnessMap": {
-        "file": "pbr/linen-orm.png",
-        "lightFile": "pbr/linen-orm-light.png",
-        "flipY": true,
-        "repeat": [
-          12,
-          6
-        ]
-      },
-      "metalnessMap": {
         "file": "pbr/linen-orm.png",
         "lightFile": "pbr/linen-orm-light.png",
         "flipY": true,
@@ -1536,7 +3078,7 @@
     "art.sidefloor": {
       "color": "#bba17b",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1553,11 +3095,6 @@
         "flipY": true
       },
       "roughnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
         "file": "pbr/oak-orm.png",
         "lightFile": "pbr/oak-orm-light.png",
         "flipY": true
@@ -1609,15 +3146,6 @@
           2
         ]
       },
-      "metalnessMap": {
-        "file": "pbr/linen-orm.png",
-        "lightFile": "pbr/linen-orm-light.png",
-        "flipY": true,
-        "repeat": [
-          2,
-          2
-        ]
-      },
       "aoMap": {
         "file": "pbr/linen-orm.png",
         "lightFile": "pbr/linen-orm-light.png",
@@ -1631,7 +3159,7 @@
     "art.wicker": {
       "color": "#d1a66f",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1648,11 +3176,6 @@
         "flipY": true
       },
       "roughnessMap": {
-        "file": "pbr/oak-orm.png",
-        "lightFile": "pbr/oak-orm-light.png",
-        "flipY": true
-      },
-      "metalnessMap": {
         "file": "pbr/oak-orm.png",
         "lightFile": "pbr/oak-orm-light.png",
         "flipY": true
@@ -1728,7 +3251,7 @@
     "vehicle.red": {
       "color": "#bc2923",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1740,11 +3263,6 @@
         "flipY": false
       },
       "roughnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": false
-      },
-      "metalnessMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": false
@@ -1758,7 +3276,7 @@
     "vehicle.ivory": {
       "color": "#fff0d2",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1774,11 +3292,6 @@
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
@@ -1788,7 +3301,7 @@
     "vehicle.dark": {
       "color": "#253430",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1804,11 +3317,6 @@
         "lightFile": "pbr/plastic-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/plastic-orm.png",
-        "lightFile": "pbr/plastic-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/plastic-orm.png",
         "lightFile": "pbr/plastic-orm-light.png",
@@ -1818,7 +3326,7 @@
     "vehicle.fur": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1839,11 +3347,6 @@
         "lightFile": "pbr/fur-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/fur-orm.png",
-        "lightFile": "pbr/fur-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/fur-orm.png",
         "lightFile": "pbr/fur-orm-light.png",
@@ -1853,7 +3356,7 @@
     "vehicle.skin": {
       "color": "#e4a292",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1869,11 +3372,6 @@
         "lightFile": "pbr/fur-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/fur-orm.png",
-        "lightFile": "pbr/fur-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/fur-orm.png",
         "lightFile": "pbr/fur-orm-light.png",
@@ -1883,7 +3381,7 @@
     "vehicle.leather": {
       "color": "#ffffff",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1904,11 +3402,6 @@
         "lightFile": "pbr/linen-orm-light.png",
         "flipY": false
       },
-      "metalnessMap": {
-        "file": "pbr/linen-orm.png",
-        "lightFile": "pbr/linen-orm-light.png",
-        "flipY": false
-      },
       "aoMap": {
         "file": "pbr/linen-orm.png",
         "lightFile": "pbr/linen-orm-light.png",
@@ -1918,7 +3411,7 @@
     "vehicle.white": {
       "color": "#fff9e8",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1930,11 +3423,6 @@
         "flipY": false
       },
       "roughnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": false
-      },
-      "metalnessMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": false
@@ -1948,7 +3436,7 @@
     "vehicle.mouth": {
       "color": "#673435",
       "roughness": 1,
-      "metalness": 1,
+      "metalness": 0,
       "normalScale": [
         0.2,
         0.2
@@ -1960,11 +3448,6 @@
         "flipY": false
       },
       "roughnessMap": {
-        "file": "pbr/enamel-orm.png",
-        "lightFile": "pbr/enamel-orm-light.png",
-        "flipY": false
-      },
-      "metalnessMap": {
         "file": "pbr/enamel-orm.png",
         "lightFile": "pbr/enamel-orm-light.png",
         "flipY": false
@@ -2446,7 +3929,7 @@
   },
   "quality": {
     "standard": {
-      "pixelRatio": 2,
+      "pixelRatio": 1.5,
       "renderScale": 1,
       "anisotropy": 8,
       "contactShadows": true,
