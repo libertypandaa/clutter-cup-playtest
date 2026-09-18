@@ -340,6 +340,21 @@
         0.6582126617431641
       ]
     },
+    "interaction.shutter": {
+      "file": "release/board.glb",
+      "lightFile": "release/board-light.glb",
+      "materials": {"wood": "family.wood", "edge": "family.endgrain"}
+    },
+    "interaction.treadle": {
+      "file": "release/board.glb",
+      "lightFile": "release/board-light.glb",
+      "materials": {"wood": "family.wood", "edge": "family.endgrain"}
+    },
+    "interaction.spool": {
+      "file": "release/spool.glb",
+      "lightFile": "release/spool-light.glb",
+      "materials": {"wood": "family.wood", "edge": "family.endgrain"}
+    },
     "item.board": {
       "file": "release/board.glb",
       "lightFile": "release/board-light.glb",
