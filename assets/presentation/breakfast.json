@@ -220,7 +220,7 @@
     "seat.pillow": {
       "offset": [
         0,
-        -0.55,
+        0,
         0
       ],
       "materials": {
@@ -251,8 +251,8 @@
       ]
     },
     "item.mixer": {
-      "file": "pbr/mixer.glb",
-      "lightFile": "pbr/mixer-light.glb",
+      "file": "living/mixer.glb",
+      "lightFile": "living/mixer-light.glb",
       "bounds": [
         0.4339999854564667,
         0.28599999845027924,
@@ -273,7 +273,14 @@
         "mouth": "vehicle.mouth",
         "thimble": "vehicle.thimble",
         "ceramic": "vehicle.ceramic"
-      }
+      },
+      "requiredNodes": [
+        "socket_drive",
+        "mechanism_shaft_0",
+        "mechanism_shaft_1",
+        "mechanism_pulley"
+      ],
+      "mechanism": "mixer"
     },
     "item.driver": {
       "offset": [
@@ -341,19 +348,25 @@
       ]
     },
     "interaction.shutter": {
-      "file": "release/board.glb",
-      "lightFile": "release/board-light.glb",
-      "materials": {"wood": "family.wood", "edge": "family.endgrain"}
+      "file": "living/interaction-shutter.glb",
+      "lightFile": "living/interaction-shutter-light.glb",
+      "requiredNodes": [
+        "shutter_green"
+      ]
     },
     "interaction.treadle": {
-      "file": "release/board.glb",
-      "lightFile": "release/board-light.glb",
-      "materials": {"wood": "family.wood", "edge": "family.endgrain"}
+      "file": "living/interaction-treadle.glb",
+      "lightFile": "living/interaction-treadle-light.glb",
+      "requiredNodes": [
+        "treadle_green"
+      ]
     },
     "interaction.spool": {
-      "file": "release/spool.glb",
-      "lightFile": "release/spool-light.glb",
-      "materials": {"wood": "family.wood", "edge": "family.endgrain"}
+      "file": "living/interaction-spool.glb",
+      "lightFile": "living/interaction-spool-light.glb",
+      "requiredNodes": [
+        "spool_thread"
+      ]
     },
     "item.board": {
       "file": "release/board.glb",
@@ -387,31 +400,53 @@
       ]
     },
     "item.chainsaw": {
-      "file": "release/chainsaw.glb",
-      "lightFile": "release/chainsaw-light.glb",
+      "file": "living/chainsaw.glb",
+      "lightFile": "living/chainsaw-light.glb",
       "bounds": [
         0.5382748246192932,
         0.39279016852378845,
         0.8629999905824661
-      ]
+      ],
+      "requiredNodes": [
+        "socket_drive",
+        "mechanism_chain"
+      ],
+      "mechanism": "chainsaw"
     },
     "item.kettle": {
-      "file": "release/kettle.glb",
-      "lightFile": "release/kettle-light.glb",
+      "file": "living/kettle.glb",
+      "lightFile": "living/kettle-light.glb",
       "bounds": [
         0.5512465834617615,
         0.5557641535997391,
         0.7116232812404633
-      ]
+      ],
+      "requiredNodes": [
+        "socket_drive",
+        "steam_spout",
+        "steam_valve",
+        "steam_pipe"
+      ],
+      "mechanism": "kettle"
     },
     "item.hamster": {
-      "file": "release/hamster.glb",
-      "lightFile": "release/hamster-light.glb",
+      "file": "living/hamster.glb",
+      "lightFile": "living/hamster-light.glb",
       "bounds": [
         0.3719959855079651,
         0.6969999969005585,
         0.6539999842643738
-      ]
+      ],
+      "requiredNodes": [
+        "socket_drive",
+        "mechanism_wheel",
+        "animal_body",
+        "paw_0",
+        "paw_1",
+        "paw_2",
+        "paw_3"
+      ],
+      "mechanism": "hamster"
     },
     "item.spool": {
       "file": "release/spool.glb",
@@ -493,8 +528,8 @@
         0,
         0
       ],
-      "file": "pbr/mira.glb",
-      "lightFile": "pbr/mira-light.glb",
+      "file": "living/mira.glb",
+      "lightFile": "living/mira-light.glb",
       "bounds": [
         0.5120000243186951,
         0.6548454761505127,
@@ -521,17 +556,19 @@
         "hand_left",
         "hand_right",
         "foot_left",
-        "foot_right"
+        "foot_right",
+        "steering_hands"
       ],
       "animations": {
         "idle": "seated_idle",
         "driving": "seated_drive",
         "ejected": "airborne"
-      }
+      },
+      "steeringNode": "steering_hands"
     },
     "driver.bork": {
-      "file": "release/bork.glb",
-      "lightFile": "release/bork-light.glb",
+      "file": "living/bork.glb",
+      "lightFile": "living/bork-light.glb",
       "bounds": [
         0.3218211829662323,
         0.7099999785423279,
@@ -552,17 +589,19 @@
         "hand_left",
         "hand_right",
         "foot_left",
-        "foot_right"
+        "foot_right",
+        "steering_hands"
       ],
       "animations": {
         "idle": "idle",
         "driving": "driving",
         "ejected": "ejected"
-      }
+      },
+      "steeringNode": "steering_hands"
     },
     "driver.lio": {
-      "file": "release/lio.glb",
-      "lightFile": "release/lio-light.glb",
+      "file": "living/lio.glb",
+      "lightFile": "living/lio-light.glb",
       "bounds": [
         0.3700000047683716,
         0.6225999891757965,
@@ -583,13 +622,15 @@
         "hand_left",
         "hand_right",
         "foot_left",
-        "foot_right"
+        "foot_right",
+        "steering_hands"
       ],
       "animations": {
         "idle": "idle",
         "driving": "driving",
         "ejected": "ejected"
-      }
+      },
+      "steeringNode": "steering_hands"
     },
     "environment.arch": {
       "recipe": "environment.arch"
