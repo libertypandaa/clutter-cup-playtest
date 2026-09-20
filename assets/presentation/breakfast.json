@@ -3892,6 +3892,18 @@
       ],
       "cooldown": 0.18
     },
+    "achievement.unlock": {
+      "files": [
+        "audio/achievement-unlock.mp3"
+      ],
+      "gain": 0.34,
+      "loop": false,
+      "pitch": [
+        1,
+        1
+      ],
+      "cooldown": 0.8
+    },
     "rescue": {
       "files": [
         "audio/rescue.wav"
@@ -3978,6 +3990,19 @@
     }
   },
   "icons": {
+    "achievement.first_build": "achievements/first_build.svg",
+    "achievement.first_finish": "achievements/first_finish.svg",
+    "achievement.bring_it_home": "achievements/bring_it_home.svg",
+    "achievement.no_losses": "achievements/no_losses.svg",
+    "achievement.mechanic": "achievements/mechanic.svg",
+    "achievement.tester": "achievements/tester.svg",
+    "achievement.own_build": "achievements/own_build.svg",
+    "achievement.first_win": "achievements/first_win.svg",
+    "achievement.kitchen_veteran": "achievements/kitchen_veteran.svg",
+    "achievement.three_wheels": "achievements/three_wheels.svg",
+    "achievement.toaster_wheel": "achievements/toaster_wheel.svg",
+    "achievement.first_lasso": "achievements/first_lasso.svg",
+    "achievement.equal_scrap_win": "achievements/equal_scrap_win.svg",
     "inspect": "icons/inspect.svg",
     "reset": "icons/reset.svg",
     "lasso": "icons/lasso.svg",
