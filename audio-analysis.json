@@ -1,0 +1,133 @@
+{
+  "createdAt": "2026-09-21T04:45:11.844Z",
+  "method": "Real browser MediaRecorder capture from the game master bus; objective ffprobe/EBU R128 analysis. Loop-edge metric compares the first and last 10 ms of PCM masters.",
+  "records": [
+    {
+      "drive": "mixer",
+      "file": "output/sound-release/final-drives/standard-mixer-motion.webm",
+      "publishedAudio": "assets/presentation/audio/evidence/drive-mix-mixer.ogg",
+      "durationSeconds": 37.08041,
+      "bytes": 2554817,
+      "stream": {
+        "codec_name": "opus",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "integratedLufs": -25.6,
+      "truePeakDbfs": -12.3
+    },
+    {
+      "drive": "chainsaw",
+      "file": "output/sound-release/final-drives/standard-chainsaw-motion.webm",
+      "publishedAudio": "assets/presentation/audio/evidence/drive-mix-chainsaw.ogg",
+      "durationSeconds": 40.800261,
+      "bytes": 2378724,
+      "stream": {
+        "codec_name": "opus",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "integratedLufs": -26.2,
+      "truePeakDbfs": -7.4
+    },
+    {
+      "drive": "kettle",
+      "file": "output/sound-release/final-drives/standard-kettle-motion.webm",
+      "publishedAudio": "assets/presentation/audio/evidence/drive-mix-kettle.ogg",
+      "durationSeconds": 42.35982,
+      "bytes": 4383890,
+      "stream": {
+        "codec_name": "opus",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "integratedLufs": -28.8,
+      "truePeakDbfs": -13.6
+    },
+    {
+      "drive": "hamster",
+      "file": "output/sound-release/final-drives/standard-hamster-motion.webm",
+      "publishedAudio": "assets/presentation/audio/evidence/drive-mix-hamster.ogg",
+      "durationSeconds": 30.771429,
+      "bytes": 3355842,
+      "stream": {
+        "codec_name": "opus",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "integratedLufs": -28.6,
+      "truePeakDbfs": -9.7
+    }
+  ],
+  "seams": [
+    {
+      "id": "drive.mixer.core",
+      "edgeMeanRelative": 0.15660825867950393
+    },
+    {
+      "id": "drive.mixer.detail",
+      "edgeMeanRelative": 0.054269094414095484
+    },
+    {
+      "id": "drive.chainsaw.core",
+      "edgeMeanRelative": 0.14142481486002603
+    },
+    {
+      "id": "drive.chainsaw.detail",
+      "edgeMeanRelative": 0.21017691294352214
+    },
+    {
+      "id": "drive.kettle.core",
+      "edgeMeanRelative": 0.03847433162684869
+    },
+    {
+      "id": "drive.kettle.detail",
+      "edgeMeanRelative": 0.1617150045407506
+    },
+    {
+      "id": "drive.hamster.core",
+      "edgeMeanRelative": 0.0061528338248228055
+    },
+    {
+      "id": "drive.hamster.detail",
+      "edgeMeanRelative": 0.015289137445193843
+    },
+    {
+      "id": "roll.wood",
+      "edgeMeanRelative": 0.13728618880576166
+    },
+    {
+      "id": "roll.tile",
+      "edgeMeanRelative": 0.13678940308517773
+    },
+    {
+      "id": "roll.crumbs",
+      "edgeMeanRelative": 0.009327473779513942
+    },
+    {
+      "id": "roll.wet",
+      "edgeMeanRelative": 0.01418543795369319
+    },
+    {
+      "id": "ambience.kitchen",
+      "edgeMeanRelative": 0.04066545307443366
+    },
+    {
+      "id": "ambience.garage",
+      "edgeMeanRelative": 0.02432977603369066
+    },
+    {
+      "id": "music.garage",
+      "edgeMeanRelative": 0.0577305243341149
+    },
+    {
+      "id": "music.race",
+      "edgeMeanRelative": 0.040873117409158014
+    }
+  ],
+  "limits": {
+    "qaSequenceIntegratedLufs": "-30 to -24 (includes idle, pause and detached silence)",
+    "maxTruePeakDbfs": -1,
+    "maxLoopEdgeMeanRelative": 0.35
+  }
+}

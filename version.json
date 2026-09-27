@@ -1,7 +1,9 @@
 {
   "game": "clutter-cup",
   "version": "0.3.0-vs",
-  "buildId": "vs-2026-09-20T12:32:01.746Z",
+  "buildId": "vs-2026-09-27T06:44:13.803Z",
+  "sourceCommit": "159255e344f40f75d49e14a2dccdde43c4fb2317",
+  "sourceDirty": true,
   "saveSchemaVersion": 4,
   "protocolVersion": 1
 }
