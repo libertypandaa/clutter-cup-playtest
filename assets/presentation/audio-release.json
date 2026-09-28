@@ -25,6 +25,8 @@
     "impact.metal": {"files":["audio/release/impact-metal-1.ogg","audio/release/impact-metal-2.ogg","audio/release/impact-metal-3.ogg"],"gain":0.58,"bus":"effects","preload":["race"],"priority":75,"cooldown":0.11,"pitch":[0.94,1.06],"duckDb":1.5,"duckSeconds":0.35},
     "impact.wood": {"files":["audio/release/impact-wood-1.ogg","audio/release/impact-wood-2.ogg","audio/release/impact-wood-3.ogg"],"gain":0.62,"bus":"effects","preload":["race"],"priority":75,"cooldown":0.11,"pitch":[0.94,1.06],"duckDb":1.5,"duckSeconds":0.35},
     "impact.plastic": {"files":["audio/release/impact-plastic-1.ogg","audio/release/impact-plastic-2.ogg","audio/release/impact-plastic-3.ogg"],"gain":0.62,"bus":"effects","preload":["race"],"priority":75,"cooldown":0.11,"pitch":[0.94,1.06],"duckDb":1.5,"duckSeconds":0.35},
+    "mount.creak": {"files":["audio/release/garage-rotate.ogg"],"gain":0.28,"bus":"effects","preload":["race"],"priority":40,"cooldown":0.75,"pitch":[0.82,0.96]},
+    "part.detach": {"files":["audio/release/garage-remove.ogg"],"gain":0.66,"bus":"effects","preload":["race"],"priority":92,"cooldown":0.35,"duckDb":2,"duckSeconds":0.5},
     "ui.select": {"files":["audio/release/ui-select.ogg"],"gain":0.42,"bus":"effects","preload":["common"],"priority":55,"cooldown":0.05},
     "ui.open": {"files":["audio/release/ui-open.ogg"],"gain":0.46,"bus":"effects","preload":["common"],"priority":58,"cooldown":0.15},
     "ui.reject": {"files":["audio/release/ui-reject.ogg"],"gain":0.52,"bus":"effects","preload":["common"],"priority":78,"cooldown":0.25},
